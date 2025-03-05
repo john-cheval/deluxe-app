@@ -139,6 +139,10 @@ button {
   /* overflow: hidden; */
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 .buttonOne {
   background-color: transparent;
   color: #000;
@@ -164,7 +168,7 @@ button {
 }
 
 .button:hover img {
-  transform: translateX(25px);
+  transform: translateX(27px);
   transition: transform 0.4s ease-in-out;
 }
 

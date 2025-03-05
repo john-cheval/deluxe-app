@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.css";
 import { homeExperienceData } from "@/data/homeData";
 import Image from "next/image";
+import arrowForward from "../../../../public/arrow_forward.svg";
 const Experience = () => {
   return (
     <div className={styles.exper__wrapper}>
@@ -37,6 +38,18 @@ const Experience = () => {
           </div>
         ))}
       </div>
+
+      <button className="buttonOne button mx-auto">
+        {" "}
+        View All
+        <Image
+          src={arrowForward}
+          alt="arrow_forward"
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
+      </button>
     </div>
   );
 };
