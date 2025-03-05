@@ -4,7 +4,13 @@ import styles from "./style.module.css";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <video autoPlay loop muted className={styles.header_video}>
+      <video
+        autoPlay
+        loop
+        muted
+        controlsList="nodownload"
+        className={styles.header_video}
+      >
         <source src="/Home/Header/headerVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname, "HHHH");
   return (
     <div className={styles.navbar}>
       <nav className={styles.navbar_wrapper}>

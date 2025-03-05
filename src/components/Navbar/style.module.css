@@ -3,6 +3,10 @@
   font-family: var(--font-semimoder);
   background: transparent;
   z-index: 100;
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
 }
 .navbar_wrapper {
   display: flex;
