@@ -6,17 +6,17 @@ const navLinksLeft = [
   },
   {
     label: "About",
-    href: "/",
+    href: "/about",
     type: "link",
   },
   {
     label: "Services",
-    href: "/",
+    href: "/services",
     type: "link",
   },
   {
     label: "Gallery",
-    href: "/",
+    href: "/gallery",
     type: "link",
   },
 ];
@@ -24,22 +24,17 @@ const navLinksLeft = [
 const navLinksRight = [
   {
     label: "Plan your event",
-    href: "/",
+    href: "/plan",
     type: "link",
   },
   {
     label: "Contact Us",
-    href: "/",
+    href: "/contact-us",
     type: "link",
   },
-  {
-    label: "Services",
-    href: "/",
-    type: "link",
-  },
+
   {
     label: "Get quote",
-    href: "/gallery",
     type: "button",
   },
 ];
