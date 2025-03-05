@@ -25,8 +25,6 @@ const Experience = () => {
               <Image
                 src={data.imageUrl}
                 alt={data.title}
-                // height={data.height}
-                // width={260}
                 layout="fill"
                 objectFit="cover"
               />

@@ -31,6 +31,8 @@
   --font-black: #000;
   --font-white: #fff;
 
+  --bg-dark-1: #021b3a;
+
   --button-bg-white: #fff;
 }
 
@@ -150,6 +152,12 @@ button {
   z-index: 5;
   margin-top: 15px;
 }
+.buttonRed {
+  background-color: transparent;
+  color: var(--font-white);
+  position: relative;
+  z-index: 5;
+}
 
 .buttonOne::before {
   content: "";
@@ -163,7 +171,20 @@ button {
   z-index: -1;
 }
 
-.buttonOne:hover::before {
+.buttonRed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 70px;
+  background-color: #a10101;
+  transition: width 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.buttonOne:hover::before,
+.buttonRed:hover::before {
   width: 90%;
 }
 
