@@ -7,7 +7,7 @@ import { navLinksLeft, navLinksRight } from "@/data/navLinks";
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <div className={styles.navbar_wrapper}>
+      <nav className={styles.navbar_wrapper}>
         <ul className={styles.navbar__left}>
           {navLinksLeft?.map((links, index) => (
             <li key={index}>
@@ -34,7 +34,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
     </div>
   );
 };
