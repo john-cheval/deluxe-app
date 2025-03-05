@@ -1,0 +1,24 @@
+.navbar {
+  padding: 55px 68px;
+  font-family: var(--font-semimoder);
+  background: transparent;
+  z-index: 100;
+}
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__left,
+.navbar__right {
+  display: flex;
+  column-gap: 53px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.42px;
+  align-items: center;
+}
+.nav_btn {
+  padding: 10px 28px;
+  border: 0.5px solid #000;
+}
