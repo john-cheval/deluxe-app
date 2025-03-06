@@ -1,5 +1,5 @@
 .client_wrapper {
-  padding: 50px 68px 74px;
+  padding: /* 46px */ 68px /* 70px */;
   overflow: hidden;
 }
 .client_container {

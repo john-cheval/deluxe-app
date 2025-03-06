@@ -7,6 +7,7 @@ import Hero from "@/components/Home/Hero/Hero";
 import Menu from "@/components/Home/Menu/Menu";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
 import Contact from "@/components/common/Contact/Contact";
+import Footer from "@/components/common/Footer/Footer";
 import Navbar from "@/components/common/Navbar/Navbar";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
         <Clients />
+        <Footer />
       </main>
     </div>
   );
