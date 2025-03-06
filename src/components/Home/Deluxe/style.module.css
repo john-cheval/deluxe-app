@@ -1,0 +1,70 @@
+.del_wrapper {
+  padding: 162px 68px 135px;
+  background-color: var(--bg-dark-1);
+  color: var(--font-white);
+  overflow: hidden;
+}
+.del_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 94px;
+}
+.del_left {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+.del_left h2 {
+  font-family: var(--font-americana);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 146%; /* 58.4px */
+  letter-spacing: 1.2px;
+  max-width: 588px;
+}
+.img_container {
+  position: relative;
+}
+
+.image {
+  width: 355px;
+  height: 443px;
+  position: relative;
+  margin-left: auto;
+  z-index: 50;
+}
+.badge {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left_img {
+  position: absolute;
+  /* z-index: 100; */
+  top: -80px;
+  left: -70px;
+}
+.del_right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 40px; */
+}
+.right_img {
+  position: relative;
+  width: 500px;
+  height: 564px;
+}
+.del_right p {
+  color: var(--font-white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 203%; /* 32.48px */
+  letter-spacing: 0.48px;
+  max-width: 515px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
