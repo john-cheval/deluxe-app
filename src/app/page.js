@@ -1,4 +1,5 @@
 import Achievements from "@/components/Home/Achivements/Achievements";
+import Clients from "@/components/Home/Clients/Clients";
 import Deluxe from "@/components/Home/Deluxe/Deluxe";
 import Experience from "@/components/Home/Experience/Experience";
 import Header from "@/components/Home/Header/Header";
@@ -13,7 +14,7 @@ export default function Home() {
     <div>
       {/* <Navbar /> */}
       <Header />
-      <main className="main_bg" /* className="bg_white" */>
+      <main /* className="main_bg" */ className="bg_white">
         <Hero />
         <Experience />
         <Deluxe />
@@ -21,6 +22,7 @@ export default function Home() {
         <Achievements />
         <Testimonials />
         <Contact />
+        <Clients />
       </main>
     </div>
   );

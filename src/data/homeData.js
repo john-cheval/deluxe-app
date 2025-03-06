@@ -120,9 +120,37 @@ const homeTestimonialData = [
   },
 ];
 
+const clientData = [
+  {
+    id: 1,
+    imageUrl: "/clients/client1.png",
+  },
+  {
+    id: 2,
+    imageUrl: "/clients/client2.png",
+  },
+  {
+    id: 3,
+    imageUrl: "/clients/client3.png",
+  },
+  {
+    id: 4,
+    imageUrl: "/clients/client4.png",
+  },
+  {
+    id: 5,
+    imageUrl: "/clients/client5.png",
+  },
+  {
+    id: 6,
+    imageUrl: "/clients/client6.png",
+  },
+];
+
 export {
   homeExperienceData,
   homeMenuData,
   homeAchievementsData,
   homeTestimonialData,
+  clientData,
 };

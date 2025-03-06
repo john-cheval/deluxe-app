@@ -1,0 +1,31 @@
+.client_wrapper {
+  padding: 50px 68px 74px;
+  overflow: hidden;
+}
+.client_container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 73px;
+  animation: marquee 15s linear infinite;
+}
+.client_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+.client_item img {
+  position: relative;
+  width: 183px;
+  height: auto;
+  object-fit: cover;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
