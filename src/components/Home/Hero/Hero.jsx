@@ -7,7 +7,7 @@ import arrowForward from "../../../../public/arrow_forward.svg";
 
 const Hero = () => {
   return (
-    <div className={styles.hero_wrapper}>
+    <section className={styles.hero_wrapper}>
       <div className={styles.hero__left}>
         <div className={styles.hero__left__image}>
           <Image
@@ -60,7 +60,7 @@ const Hero = () => {
           />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

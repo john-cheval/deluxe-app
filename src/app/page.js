@@ -2,6 +2,7 @@ import Deluxe from "@/components/Home/Deluxe/Deluxe";
 import Experience from "@/components/Home/Experience/Experience";
 import Header from "@/components/Home/Header/Header";
 import Hero from "@/components/Home/Hero/Hero";
+import Menu from "@/components/Home/Menu/Menu";
 import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Experience />
         <Deluxe />
+        <Menu />
       </main>
     </div>
   );

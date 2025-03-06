@@ -5,7 +5,7 @@ import Image from "next/image";
 import arrowForward from "../../../../public/arrow_forward.svg";
 const Experience = () => {
   return (
-    <div className={styles.exper__wrapper}>
+    <section className={styles.exper__wrapper}>
       <div className={styles.exper__header}>
         <h4 className="small_heading">Deluxe</h4>
         <h2 className="main_heading">Experience</h2>
@@ -48,7 +48,7 @@ const Experience = () => {
           sizes="100vw"
         />
       </button>
-    </div>
+    </section>
   );
 };
 

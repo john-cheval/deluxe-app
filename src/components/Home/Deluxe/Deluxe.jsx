@@ -9,7 +9,7 @@ import arrowForward from "../../../../public/arrow_forward-2.svg";
 
 const Deluxe = () => {
   return (
-    <div className={styles.del_wrapper}>
+    <section className={styles.del_wrapper}>
       <div className={styles.del_container}>
         <div className={styles.del_left}>
           <h2>Lorem Ipsum is simply dummy text of the</h2>
@@ -68,7 +68,7 @@ const Deluxe = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
