@@ -81,4 +81,22 @@ const homeMenuData = [
   },
 ];
 
-export { homeExperienceData, homeMenuData };
+const homeAchievementsData = [
+  {
+    id: 1,
+    title: "Events Completed",
+    subTitle: "10000+ Events",
+  },
+  {
+    id: 2,
+    title: "Happy Clients",
+    subTitle: "2000+ Clients",
+  },
+  {
+    id: 3,
+    title: "Locations",
+    subTitle: "16+ Location",
+  },
+];
+
+export { homeExperienceData, homeMenuData, homeAchievementsData };

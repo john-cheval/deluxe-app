@@ -1,21 +1,20 @@
-/* Define font faces properly */
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("/fonts/helvetica-neue.ttc") format("truetype-collection"); /* TTC font */
+  src: url("/fonts/helvetica-neue.ttc") format("truetype-collection");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Americana";
-  src: url("/fonts/americana-regular.otf") format("opentype"); /* OTF font */
+  src: url("/fonts/americana-regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SemimoderBook";
-  src: url("/fonts/selfmodern-book.ttf") format("truetype"); /* TTF font */
+  src: url("/fonts/selfmodern-book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -82,9 +81,6 @@ button {
   background-size: cover;
   background-position: center;
   height: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 .text-center {
   text-align: center;
@@ -138,7 +134,6 @@ button {
   padding-inline: 30px;
   transition: all 0.3s ease-in-out;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .mx-auto {

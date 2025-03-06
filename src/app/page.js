@@ -1,3 +1,4 @@
+import Achievements from "@/components/Home/Achivements/Achievements";
 import Deluxe from "@/components/Home/Deluxe/Deluxe";
 import Experience from "@/components/Home/Experience/Experience";
 import Header from "@/components/Home/Header/Header";
@@ -15,6 +16,7 @@ export default function Home() {
         <Experience />
         <Deluxe />
         <Menu />
+        <Achievements />
       </main>
     </div>
   );
