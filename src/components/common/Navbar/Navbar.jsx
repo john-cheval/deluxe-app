@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
-import Logo from "../../../public/Home/Navbar/Logo.svg";
+import Logo from "../../../../public/Home/Navbar/Logo.svg";
 import { navLinksLeft, navLinksRight } from "@/data/navLinks";
 import { usePathname } from "next/navigation";
 

@@ -12,7 +12,7 @@ const Testimonials = () => {
     Autoplay({ delay: 4000, stopOnInteraction: false }),
   ]);
   return (
-    <div className={styles.testi__wrapper}>
+    <section className={styles.testi__wrapper}>
       <div className={styles.testi__header}>
         <h4 className="small_heading">Testimonials</h4>
         <h2 className="main_heading">What our clients say</h2>
@@ -34,7 +34,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

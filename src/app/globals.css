@@ -198,3 +198,64 @@ button {
   width: 24px;
   height: 14px;
 }
+
+/* Forms */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e1bc75;
+  outline: 0;
+  font-size: 15px;
+  color: var(--font-color);
+  padding: 15px 0 4px;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    cursor: text;
+    top: 6px;
+    color: var(--font-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    letter-spacing: 0.48px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--font-color);
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: -1px;
+    display: block;
+    transition: 0.2s;
+    font-weight: 500;
+  }
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
