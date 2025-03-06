@@ -1,0 +1,42 @@
+.testi__wrapper {
+  padding: 74px 68px;
+}
+.testi__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 100%;
+}
+.slide p {
+  color: #1e4242;
+  font-family: var(--font-americana);
+  text-align: center;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 174%; /* 53.94px */
+  max-width: 939px;
+}
+.slide h5 {
+  color: #1e4242;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153%; /* 24.48px */
+}
+.carousel {
+  overflow: hidden;
+}
+.carouselContainer {
+  display: flex;
+}

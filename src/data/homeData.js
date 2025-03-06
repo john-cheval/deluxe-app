@@ -99,4 +99,30 @@ const homeAchievementsData = [
   },
 ];
 
-export { homeExperienceData, homeMenuData, homeAchievementsData };
+const homeTestimonialData = [
+  {
+    id: 1,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+    author: "John doe",
+  },
+  {
+    id: 2,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+    author: "Micheal doe",
+  },
+  {
+    id: 3,
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+    author: "Lara doe",
+  },
+];
+
+export {
+  homeExperienceData,
+  homeMenuData,
+  homeAchievementsData,
+  homeTestimonialData,
+};

@@ -87,6 +87,9 @@ button {
 }
 
 /* reusable classses */
+.bg_white {
+  background-color: #fff;
+}
 .small_heading {
   color: var(--small-text-color);
   font-family: var(--font-helvetica);
