@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
 import Logo from "../../../../public/Home/Navbar/Logo.svg";
@@ -8,8 +8,28 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [bgColor, setBgColor] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 250) {
+        setBgColor(true);
+      } else {
+        setBgColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className={styles.navbar}>
+    <div
+      /* className={styles.navbar} */ className={`${styles.navbar} ${
+        bgColor ? styles.navbarScrolled : ""
+      }`}
+    >
       <nav className={styles.navbar_wrapper}>
         <ul className={styles.navbar__left}>
           {navLinksLeft?.map((links, index) => {

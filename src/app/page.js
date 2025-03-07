@@ -13,7 +13,7 @@ import Navbar from "@/components/common/Navbar/Navbar";
 export default function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <main /* className="main_bg" */ className="bg_white">
         <Hero />
