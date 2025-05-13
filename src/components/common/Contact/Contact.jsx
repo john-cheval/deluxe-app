@@ -23,6 +23,11 @@ const Contact = () => {
     });
     setName(e.target.value);
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
   return (
     <section className={styles.contact_wrapper}>
       <div className={styles.contact_container}>
@@ -31,7 +36,7 @@ const Contact = () => {
         </div>
         <div className={styles.contact_right}>
           <h2 className="main_heading">Let’s start planning</h2>
-          <form className={styles.form_conntainer}>
+          <form onSubmit={handleSubmit} className={styles.form_conntainer}>
             <div class="form__group field">
               <input
                 type="text"
@@ -159,7 +164,9 @@ const Contact = () => {
               </label>
             </div>
 
-            <button type="submit" className={styles.contact_btn}>Request a call back</button>
+            <button type="submit" className={styles.contact_btn}>
+              Request a call back
+            </button>
           </form>
         </div>
       </div>

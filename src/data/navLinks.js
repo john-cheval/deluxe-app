@@ -23,8 +23,13 @@ const navLinksLeft = [
 
 const navLinksRight = [
   {
-    label: "Plan your event",
-    href: "/plan",
+    label: "Insights",
+    href: "/insights",
+    type: "link",
+  },
+  {
+    label: "Menu",
+    href: "/menu",
     type: "link",
   },
   {
