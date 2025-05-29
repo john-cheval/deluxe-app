@@ -6,7 +6,7 @@ export const fadeInUp = (delay = 0) => ({
     ease: "easeOut",
     delay,
   },
-  viewport: { once: true, amount: 0.4 },
+  viewport: { once: true, amount: 0.2 },
 });
 
 export const fadeInUpSingle = {

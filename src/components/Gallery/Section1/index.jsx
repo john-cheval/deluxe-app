@@ -110,7 +110,7 @@ const SectionOne = () => {
         </div>
         <motion.button {...fadeInUpSingle} className="buttonOne button mx-auto">
           {" "}
-          Read More
+          View All
           <Image
             src={"/arrow_forward.svg"}
             alt="arrow_forward"
