@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Clients = () => {
   return (
-    <div className={styles.client_wrapper}>
+    <div className="containers">
       <div className={styles.client_container}>
         {[...clientData, ...clientData]?.map((clientData) => (
           <div key={`client-${clientData.id}`} className={styles.client_item}>

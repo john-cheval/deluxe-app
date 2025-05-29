@@ -29,7 +29,7 @@ const Contact = () => {
     console.log(formData);
   };
   return (
-    <section className={styles.contact_wrapper}>
+    <section className="containers py-20">
       <div className={styles.contact_container}>
         <div className={styles.contact_left}>
           <Image src={ContactImg} alt="Contact Us" layout="fill" />
