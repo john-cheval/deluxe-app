@@ -19,6 +19,11 @@ module.exports = {
         main: "#021b3a",
         secondary: "#a10101",
         light: "#fff",
+        desc: "#3C3C3C",
+      },
+      backgroundImage: {
+        "top-grad":
+          "linear-gradient(178deg, #FFF -17.23%, rgba(255, 255, 255, 0.00) 98.46%);",
       },
     },
   },

@@ -12,7 +12,7 @@ const Testimonials = () => {
     Autoplay({ delay: 4000, stopOnInteraction: false }),
   ]);
   return (
-    <section className={styles.testi__wrapper}>
+    <section className="containers pt-20">
       <div className={styles.testi__header}>
         <h4 className="small_heading">Testimonials</h4>
         <h2 className="main_heading">What our clients say</h2>

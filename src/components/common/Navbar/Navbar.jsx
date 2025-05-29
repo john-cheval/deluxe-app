@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`px-16   font-selfModern bg-transparent z-[999] fixed  ease-in-out w-full transition-all duration-500  ${
+      className={`containers   font-selfModern bg-transparent z-[999] fixed  ease-in-out w-full transition-all duration-500  ${
         bgColor ? "bg-white py-5 shadow-md " : "py-7"
       } ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >

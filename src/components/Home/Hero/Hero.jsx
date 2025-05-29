@@ -19,7 +19,7 @@ const Hero = () => {
           />
         </div>
         <div className={styles.hero__video}>
-          <video autoPlay loop muted controlsList="nodownload">
+          <video autoPlay playsInline loop muted controlsList="nodownload">
             <source src="/Home/Hero/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
