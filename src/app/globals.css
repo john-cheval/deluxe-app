@@ -143,6 +143,17 @@ button {
   margin-left: -60px;
 }
 
+.carousel {
+  overflow: hidden;
+}
+.carouselContainer {
+  display: flex;
+}
+.slides {
+  flex-shrink: 0;
+  min-width: 412px;
+  height: 100%;
+}
 .button {
   display: flex;
   align-items: center;

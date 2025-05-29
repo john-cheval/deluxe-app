@@ -3,21 +3,40 @@ import Link from "next/link";
 import React from "react";
 import * as motion from "motion/react-client";
 import { fadeInUp } from "@/app/utils/framer";
+import isVideo from "@/app/lib/checkIsVideo";
 
-const Cards = ({ cardData, ind }) => {
+const Cards = ({ cardData, ind, slides = "false" }) => {
   return (
-    <motion.div className="border border-gold " {...fadeInUp(ind * 0.3)}>
+    <motion.div
+      className={`border border-gold ${slides ? "slides last:mr-8" : ""} `}
+      {...(ind ? fadeInUp(ind * 0.3) : {})}
+    >
       <Link href={`/insights/${cardData?.id}`}>
         {cardData?.imageUrl && (
           <div>
-            <Image
-              src={cardData?.imageUrl}
-              alt={cardData?.title}
-              height={275}
-              width={412}
-              sizes="100vw"
-              className="h-auto  w-full "
-            />
+            {isVideo(cardData?.imageUrl) ? (
+              <div>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src={cardData?.imageUrl}
+                />
+              </div>
+            ) : (
+              <Image
+                src={cardData?.imageUrl}
+                alt={cardData?.title}
+                height={275}
+                width={412}
+                sizes="100vw"
+                className="h-auto  w-full  "
+                unoptimized={
+                  process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"
+                }
+              />
+            )}
           </div>
         )}
 

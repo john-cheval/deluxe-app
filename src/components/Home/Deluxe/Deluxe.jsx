@@ -20,6 +20,9 @@ const Deluxe = () => {
                 alt="Deluxe"
                 layout="fill"
                 objectFit="cover"
+                unoptimized={
+                  process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"
+                }
               />
 
               <Image
@@ -27,6 +30,9 @@ const Deluxe = () => {
                 alt="Deluxe"
                 objectFit="cover"
                 className={styles.badge}
+                unoptimized={
+                  process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"
+                }
               />
             </div>
 
@@ -35,6 +41,7 @@ const Deluxe = () => {
               alt="Deluxe"
               objectFit="cover"
               className={styles.left_img}
+              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </div>
         </div>
@@ -45,6 +52,7 @@ const Deluxe = () => {
               alt="Deluxe"
               layout="fill"
               objectFit="cover"
+              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </div>
           <p>
@@ -64,6 +72,7 @@ const Deluxe = () => {
               width={0}
               height={0}
               sizes="100vw"
+              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </button>
         </div>

@@ -18,6 +18,7 @@ const Clients = () => {
               objectFit="cover"
               priority
               sizes="100vw"
+              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </div>
         ))}

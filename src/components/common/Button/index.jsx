@@ -13,6 +13,7 @@ const Button = ({ text }) => {
         alt="arrow_forward"
         width={24}
         height={14}
+        unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
         sizes="100vw"
       />
     </motion.button>

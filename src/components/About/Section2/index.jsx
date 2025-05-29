@@ -24,6 +24,7 @@ const Section2 = () => {
         alt="eft_inner_image"
         sizes="100vw"
         className="absolute top-0 -left-14"
+        unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
       />
     </section>
   );

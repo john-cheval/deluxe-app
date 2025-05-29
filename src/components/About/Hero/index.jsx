@@ -11,6 +11,7 @@ const AboutHero = () => {
         width={1200}
         sizes="100vw"
         className="h-auto w-full object-cover"
+        unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
       />
 
       <div className="absolute w-full h-full inset-0 bg-top-grad ma-h-[318px]" />

@@ -13,7 +13,7 @@ const SectionOne = () => {
           <Cards cardData={data} key={index} ind={index} />
         ))}
       </div>
-      <motion.button {...fadeInUpSingle} className="buttonOne button mx-auto">
+      <button {...fadeInUpSingle} className="buttonOne button mx-auto">
         {" "}
         View All
         <Image
@@ -22,8 +22,9 @@ const SectionOne = () => {
           width={24}
           height={14}
           sizes="100vw"
+          unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
         />
-      </motion.button>
+      </button>
     </section>
   );
 };
