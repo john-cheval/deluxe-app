@@ -32,7 +32,12 @@ const Contact = () => {
     <section className="containers py-20">
       <div className={styles.contact_container}>
         <div className={styles.contact_left}>
-          <Image src={ContactImg} alt="Contact Us" layout="fill" />
+          <Image
+            src={ContactImg}
+            alt="Contact Us"
+            layout="fill"
+            unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
+          />
         </div>
         <div className={styles.contact_right}>
           <h2 className="main_heading">Let’s start planning</h2>

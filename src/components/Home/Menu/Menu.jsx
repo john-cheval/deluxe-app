@@ -25,6 +25,9 @@ const Menu = () => {
                 sizes="100vw"
                 layout="fill"
                 objectFit="contain"
+                unoptimized={
+                  process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"
+                }
               />
             </div>
             <div className={styles.menu__card__content}>

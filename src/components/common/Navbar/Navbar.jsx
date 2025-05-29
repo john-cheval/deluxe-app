@@ -105,6 +105,7 @@ const Navbar = () => {
               height={60}
               width={175}
               priority
+              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </Link>
 

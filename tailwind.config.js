@@ -20,6 +20,7 @@ module.exports = {
         secondary: "#a10101",
         light: "#fff",
         desc: "#3C3C3C",
+        gold: "#E1BC75",
       },
       backgroundImage: {
         "top-grad":

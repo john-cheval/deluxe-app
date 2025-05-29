@@ -16,6 +16,7 @@ const Hero = () => {
             width={0}
             height={0}
             sizes="100vw"
+            unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
         </div>
         <div className={styles.hero__video}>
@@ -31,6 +32,7 @@ const Hero = () => {
               width={0}
               height={0}
               sizes="100vw"
+              unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </div>
         </div>
@@ -57,6 +59,7 @@ const Hero = () => {
             width={0}
             height={0}
             sizes="100vw"
+            unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
         </button>
       </div>

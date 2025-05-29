@@ -31,9 +31,3 @@
   font-weight: 500;
   line-height: 153%; /* 24.48px */
 }
-.carousel {
-  overflow: hidden;
-}
-.carouselContainer {
-  display: flex;
-}
