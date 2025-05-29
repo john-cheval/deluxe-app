@@ -4,10 +4,10 @@ import React from "react";
 
 const page = () => {
   return (
-    <>
+    <div className="gallery-bg">
       <MainHeading small_title={"Event showcase"} title={"Gallery"} />
       <SectionOne />
-    </>
+    </div>
   );
 };
 

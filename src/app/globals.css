@@ -299,3 +299,9 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 110% 70%;
   background-repeat: no-repeat;
 }
+.gallery-bg {
+  background: url(/About/rightsvg.svg);
+  background-size: 30% auto;
+  background-position: 110% 8%;
+  background-repeat: no-repeat;
+}
