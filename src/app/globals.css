@@ -316,26 +316,24 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 110% 8%;
   background-repeat: no-repeat;
 }
-/* .bg-right {
-  background: url(/common/rightsvg.svg);
-  background-size: 30% auto;
-  background-position: 110% 70%;
-  background-repeat: no-repeat;
-}
-
-.bgc-left {
-  background: url(/common/leftSVG.svg);
-  background-size: 30% auto;
-  background-position: left 70%;
-  background-repeat: no-repeat;
-} */
 .bg-both {
   background-image: url(/common/leftSVG.svg), url(/common/rightsvg.svg);
   background-position: -5% 50%, 110% 70%;
   background-repeat: no-repeat, no-repeat;
   background-size: 30% auto, 30% auto;
 }
-
+.service_card_bg {
+  background: url(/common/leftsvg.svg);
+  background-size: 20% auto;
+  background-position: 77% 20%;
+  background-repeat: no-repeat;
+}
+.service_card_bg_alter {
+  background: url(/common/rightsvg.svg);
+  background-size: 22% auto;
+  background-position: 12% 28%;
+  background-repeat: no-repeat;
+}
 /* Contact  */
 .contact_input {
   @apply outline-none bg-transparent border-b border-[#E1BC75] placeholder:text-[#021B3A] font-helvetica placeholder:font-helvetica leading-[64%] text-[#021B3A]  pb-6 w-full text-base tracking-[0.48px];

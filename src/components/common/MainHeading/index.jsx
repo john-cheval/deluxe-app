@@ -1,9 +1,13 @@
 import React from "react";
 import * as motion from "motion/react-client";
 
-const MainHeading = ({ title, small_title }) => {
+const MainHeading = ({ title, small_title, isTop = true }) => {
   return (
-    <div className="pt-[200px] flex flex-col items-center gap-y-3  -ml-[5%]">
+    <div
+      className={` ${
+        isTop ? "pt-[200px]" : "pt-16"
+      }  flex flex-col items-center gap-y-3  -ml-[5%]`}
+    >
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
