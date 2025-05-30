@@ -316,3 +316,8 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 110% 8%;
   background-repeat: no-repeat;
 }
+
+/* Contact  */
+.contact_input {
+  @apply outline-none bg-transparent border-b border-[#E1BC75] placeholder:text-[#021B3A] font-helvetica placeholder:font-helvetica leading-[64%] text-[#021B3A]  pb-6 w-full text-base tracking-[0.48px];
+}
