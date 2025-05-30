@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
 
-const AboutHero = () => {
+const Hero = ({ imageUrl }) => {
   return (
     <section className="relative">
       <Image
-        src="/About/hero.jpg"
+        src={imageUrl}
         alt="About Hero Image"
         height={450}
         width={1200}
         sizes="100vw"
-        className="h-auto w-full object-cover"
+        className="h-auto w-full object-cover max-h-[450px]"
         unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
       />
 
@@ -19,4 +19,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default Hero;

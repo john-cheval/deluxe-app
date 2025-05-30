@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 import ContactImg from "../../../../public/contact.png";
 import Image from "next/image";
 
-const Contact = () => {
+const Contact = ({ isService = false }) => {
   const [formData, seFormData] = useState({
     name: "",
     email: "",
@@ -29,7 +29,7 @@ const Contact = () => {
     console.log(formData);
   };
   return (
-    <section className="containers py-20">
+    <section className={`containers ${isService ? "py-16" : "py-20"} `}>
       <div className={styles.contact_container}>
         <div className={styles.contact_left}>
           <Image
