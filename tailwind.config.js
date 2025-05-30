@@ -21,6 +21,7 @@ module.exports = {
         light: "#fff",
         desc: "#3C3C3C",
         gold: "#E1BC75",
+        contact_color: "#0B2E5A",
       },
       backgroundImage: {
         "top-grad":
