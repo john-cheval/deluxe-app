@@ -316,6 +316,25 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 110% 8%;
   background-repeat: no-repeat;
 }
+/* .bg-right {
+  background: url(/common/rightsvg.svg);
+  background-size: 30% auto;
+  background-position: 110% 70%;
+  background-repeat: no-repeat;
+}
+
+.bgc-left {
+  background: url(/common/leftSVG.svg);
+  background-size: 30% auto;
+  background-position: left 70%;
+  background-repeat: no-repeat;
+} */
+.bg-both {
+  background-image: url(/common/leftSVG.svg), url(/common/rightsvg.svg);
+  background-position: -5% 50%, 110% 70%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30% auto, 30% auto;
+}
 
 /* Contact  */
 .contact_input {
