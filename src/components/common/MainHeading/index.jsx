@@ -1,7 +1,13 @@
 import React from "react";
 import * as motion from "motion/react-client";
 
-const MainHeading = ({ title, small_title, isTop = true }) => {
+const MainHeading = ({
+  title,
+  small_title,
+  isTop = true,
+  subTitle,
+  description,
+}) => {
   return (
     <div
       className={` ${
@@ -26,6 +32,30 @@ const MainHeading = ({ title, small_title, isTop = true }) => {
       >
         {title}
       </motion.h1>
+
+      {subTitle && (
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-3xl font-americana font-medium text-main leading-[146%] tracking-[0.9px]"
+        >
+          {subTitle}
+        </motion.h2>
+      )}
+
+      {description && (
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-base font-helvetica font-light text-[#3c3c3c] leading-[188%] tracking-[0.48px] max-w-[775px] text-center"
+        >
+          {description}
+        </motion.p>
+      )}
     </div>
   );
 };
