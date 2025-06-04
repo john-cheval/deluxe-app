@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         className={`${Americana.variable} ${Helvertica.variable} ${SelfModern.variable} antialiased flex flex-col min-h-full `}
       >
         <Navbar />
-        <main className="flex-grow main_bg">{children}</main>
+        <main className="flex-grow main_bg w-full-">{children}</main>
         <Footer />
       </body>
     </html>

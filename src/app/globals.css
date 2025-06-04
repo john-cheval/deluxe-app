@@ -134,12 +134,6 @@ button {
   @apply text-sm md:text-base font-helvetica text-[#7a7a7a] leading-[194%] tracking-[0.48px] py-4 md:py-5;
 }
 
-.carousel {
-  overflow: hidden;
-}
-.carouselContainer {
-  display: flex;
-}
 .slides {
   flex-shrink: 0;
   min-width: 412px;
