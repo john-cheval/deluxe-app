@@ -88,14 +88,17 @@ button {
   @apply text-secondary font-helvetica text-[10px] leading-[203%] tracking-[6.4px] uppercase;
 }
 .main_heading {
-  @apply text-main font-americana text-2xl lg:text-3xl xl:text-4xl font-medium leading-[146%] tracking-[1.05px] max-w-[600px];
+  @apply text-main font-americana text-2xl lg:text-3xl xl:text-4xl font-medium !leading-[146%] tracking-[1.05px] max-w-[600px];
 }
 
 .main-heading-2 {
-  @apply text-main font-americana text-2xl lg:text-3xl xl:text-[45px] font-medium leading-[146%] tracking-[1.35px] max-w-[600px];
+  @apply text-main font-americana text-2xl lg:text-3xl xl:text-[45px] font-medium !leading-[146%] tracking-[1.35px] max-w-[600px];
 }
 .description {
   @apply text-desc text-base font-light leading-[203%] tracking-[0.48px] w-full md:max-w-[650px] font-helvetica;
+}
+.description-2 {
+  @apply text-desc text-base font-light leading-[203%] tracking-[0.48px] w-full lg:max-w-[650px] font-helvetica;
 }
 
 .footer_icons a {
@@ -302,7 +305,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .about-bg {
   background: url(/common/rightsvg.svg);
   background-size: 30% auto;
-  background-position: 110% 70%;
+  background-position: 110% 60%;
   background-repeat: no-repeat;
 }
 .gallery-bg {
@@ -359,6 +362,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Responsive */
 
+@media (min-width: 1400px) {
+  .about-bg {
+    background-position: 110% 70%;
+  }
+}
+
 @media (max-width: 1024px) {
   .menu__card::after {
     content: "";
@@ -373,6 +382,9 @@ input[type="number"]::-webkit-outer-spin-button {
     );
     top: 0;
     right: -10%;
+  }
+  .about-bg {
+    background: none;
   }
 }
 
