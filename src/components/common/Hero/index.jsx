@@ -14,7 +14,7 @@ const Hero = ({ imageUrl }) => {
         unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
       />
 
-      <div className="absolute w-full h-full inset-0 bg-top-grad ma-h-[318px]" />
+      <div className="absolute w-full h-full inset-0 bg-top-grad max-h-[190px] md:max-h-[318px]" />
     </section>
   );
 };

@@ -32,7 +32,7 @@ const Contact = ({ isService = false }) => {
   return (
     <section
       className={`containers ${
-        isService ? "py-16" : "py-10 md:py-14 lg:py-20"
+        isService ? "py-10 md:py-14 lg:py-16" : "py-10 md:py-14 lg:py-20"
       } `}
     >
       <div className={styles.contact_container}>
