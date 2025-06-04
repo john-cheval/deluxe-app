@@ -73,7 +73,10 @@ const ContactForm = () => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-y-7 pt-8">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-y-5 md:gap-y-7 pt-5 md:pt-8"
+      >
         {" "}
         <motion.input
           type="text"
@@ -168,7 +171,7 @@ const ContactForm = () => {
           animate="visible"
           custom={4}
           type="submit"
-          className="buttonOne button mx-auto"
+          className="buttonOne button mx-auto text-sm md:text-base"
         >
           {" "}
           Submit

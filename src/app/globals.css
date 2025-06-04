@@ -332,10 +332,16 @@ input[type="number"]::-webkit-outer-spin-button {
   background-position: 12% 28%;
   background-repeat: no-repeat;
 }
+.service-bg {
+  background: url(/common/rightsvg.svg);
+  background-size: 30% auto;
+  background-position: 110% 10%;
+  background-repeat: no-repeat;
+}
 
 /* Contact  */
 .contact_input {
-  @apply outline-none bg-transparent border-b border-[#E1BC75] placeholder:text-[#021B3A] font-helvetica placeholder:font-helvetica leading-[64%] text-[#021B3A]  pb-6 w-full text-base tracking-[0.48px];
+  @apply outline-none bg-transparent border-b border-[#E1BC75] placeholder:text-[#021B3A] font-helvetica placeholder:font-helvetica leading-[64%] text-[#021B3A]  pb-6 w-full text-sm md:text-base tracking-[0.48px];
 }
 
 /* Menu */
@@ -386,6 +392,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .about-bg {
     background: none;
   }
+  .service-bg {
+    background-position: 110% 7%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -404,10 +413,13 @@ input[type="number"]::-webkit-outer-spin-button {
   .menu__card:nth-child(2n)::after {
     display: none;
   }
-  .service_card_bg_alter {
+  .service_card_bg_alter,
+  .service-bg,
+  .service_card_bg {
     background: none;
   }
-  .service_card_bg {
-    background-color: none;
+  .buttonOne::before,
+  .buttonOne::after {
+    height: 60px;
   }
 }

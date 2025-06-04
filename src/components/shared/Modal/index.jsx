@@ -33,14 +33,14 @@ const Modal = ({ handleClose, modalOpen }) => {
         <Backdrop onClick={handleClose}>
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className=" flex flex-col gap-y-3 items-center pt-[170px] pb-[150px] px-[136px] relative bg-light "
+            className=" flex flex-col gap-y-3 items-center py-10 md:pt-[170px] md:pb-[150px] md:px-[136px] relative bg-light "
             variants={dropIn}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
-            <CiCircleCheck className="text-main text-[100px]" />
-            <h5 className="text-center font-americana uppercase font-medium text-main text-[28px]  leading-[153%] max-w-[320px]">
+            <CiCircleCheck className="text-main text-[50px] md:text-[100px]" />
+            <h5 className="text-center font-americana uppercase font-medium text-main text-lg md:text-xl lg:text-[28px]  leading-[153%] max-w-[280px] md:max-w-[320px]">
               your form was successfully submitted!
             </h5>
 
