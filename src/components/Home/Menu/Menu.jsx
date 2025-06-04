@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Menu = () => {
   return (
-    <section className={styles.menu_wrapper}>
-      <div className={styles.menu__header}>
+    <section className="pt-16 containers pb-24">
+      <div className="flex flex-col items-center justify-center gap-3">
         <h4 className="small_heading">Deluxe</h4>
         <h2 className="main_heading">Our Luxury Menu</h2>
         <p className="description text-center">
@@ -15,9 +15,12 @@ const Menu = () => {
         </p>
       </div>
 
-      <div className={styles.menu__cards}>
+      <div className="pt-12 flex justify-around">
         {homeMenuData?.map((data) => (
-          <div className={styles.menu__card} key={`index-${data.id}`}>
+          <div
+            className="flex flex-col items-center gap-8 relative "
+            key={`index-${data.id}`}
+          >
             <div className={styles.menu__card__image}>
               <Image
                 src={data.imageUrl}

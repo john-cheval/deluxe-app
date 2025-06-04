@@ -28,7 +28,7 @@ const MainHeading = ({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
-        className="main_heading"
+        className="main-heading-2 mb-1"
       >
         {title}
       </motion.h1>

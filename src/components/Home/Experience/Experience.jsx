@@ -5,8 +5,8 @@ import Image from "next/image";
 import arrowForward from "../../../../public/arrow_forward.svg";
 const Experience = () => {
   return (
-    <section className={styles.exper__wrapper}>
-      <div className={styles.exper__header}>
+    <section className=" xl:px-16 lg:px-12 sm:px-8 px-5 pb-10 md:pb-12 lg:pb-16 xl:pb-28">
+      <div className="flex flex-col items-center justify-center gap-y-2">
         <h4 className="small_heading">Deluxe</h4>
         <h2 className="main_heading">Experience</h2>
         <p className="description text-center">
@@ -15,7 +15,7 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className={styles.expr_cards}>
+      {/* <div className={styles.expr_cards}>
         {homeExperienceData?.map((data) => (
           <div className={styles.expr_card} key={`index-${data.id}`}>
             <div
@@ -38,9 +38,9 @@ const Experience = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
-      <button className="buttonOne button mx-auto">
+      <button className="buttonOne button mx-auto !hidden md:!flex">
         {" "}
         View All
         <Image

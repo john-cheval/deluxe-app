@@ -60,7 +60,7 @@ button {
 }
 
 .containers {
-  @apply px-16;
+  @apply xl:px-16 lg:px-12 sm:px-8 px-5;
 }
 
 .main_bg {
@@ -88,10 +88,14 @@ button {
   @apply text-secondary font-helvetica text-[10px] leading-[203%] tracking-[6.4px] uppercase;
 }
 .main_heading {
-  @apply text-main font-americana text-4xl font-medium leading-[146%] tracking-[1.05px] max-w-[600px];
+  @apply text-main font-americana text-2xl lg:text-3xl xl:text-4xl font-medium leading-[146%] tracking-[1.05px] max-w-[600px];
+}
+
+.main-heading-2 {
+  @apply text-main font-americana text-2xl lg:text-3xl xl:text-[45px] font-medium leading-[146%] tracking-[1.35px] max-w-[600px];
 }
 .description {
-  @apply text-desc text-base font-light leading-[203%] tracking-[0.48px] max-w-[650px] font-helvetica;
+  @apply text-desc text-base font-light leading-[203%] tracking-[0.48px] w-full md:max-w-[650px] font-helvetica;
 }
 
 .footer_icons a {
@@ -223,6 +227,9 @@ button {
   transform: translateX(27px);
   transition: transform 0.4s ease-in-out;
 }
+.mobile-menu {
+  display: none;
+}
 
 .button img {
   transition: transform 0.4s ease-in-out;
@@ -337,4 +344,27 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Contact  */
 .contact_input {
   @apply outline-none bg-transparent border-b border-[#E1BC75] placeholder:text-[#021B3A] font-helvetica placeholder:font-helvetica leading-[64%] text-[#021B3A]  pb-6 w-full text-base tracking-[0.48px];
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .hide-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+.cusine_name {
+  @apply text-main font-helvetica text-xs italic font-light leading-[150%] tracking-[0.3px] absolute top-1 z-10 left-2;
+}
+.cusine-overlay {
+  @apply bg-menu_grad  w-full h-full max-h-14 absolute top-0 left-0;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding-block: 17px;
+  }
 }

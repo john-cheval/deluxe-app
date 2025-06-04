@@ -26,6 +26,8 @@ module.exports = {
       backgroundImage: {
         "top-grad":
           "linear-gradient(178deg, #FFF -17.23%, rgba(255, 255, 255, 0.00) 98.46%);",
+        menu_grad:
+          "linear-gradient(360deg, rgba(255, 222, 171, 0.00) 0%, #FFDEAB 100%)",
       },
     },
   },
