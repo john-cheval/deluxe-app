@@ -41,6 +41,7 @@ const navLinksRight = [
   {
     label: "Get quote",
     type: "button",
+    href: "/",
   },
 ];
 
