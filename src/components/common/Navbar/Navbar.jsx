@@ -7,6 +7,7 @@ import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
 import { RiPhoneFill } from "react-icons/ri";
+import { IoMdMenu } from "react-icons/io";
 const Navbar = () => {
   const pathname = usePathname();
   const [bgColor, setBgColor] = useState(false);
@@ -44,10 +45,10 @@ const Navbar = () => {
   return (
     <header
       className={`containers   font-selfModern bg-transparent z-[999] fixed  ease-in-out w-full transition-all duration-500  ${
-        bgColor ? "bg-white py-5 shadow-md " : "py-7"
+        bgColor ? "bg-white pt-2 pb-5 shadow-md " : "py-7"
       } ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <nav>
+      <nav className="hide-menu">
         <div className={`${bgColor ? "hidden" : "flex"}    justify-between`}>
           <Link
             aria-label="Email"
@@ -78,7 +79,7 @@ const Navbar = () => {
         </div>
 
         <div className="pt-3  flex items-center justify-between">
-          <ul className="flex relative  gap-x-14 text-sm font-medium traking-[0.42px] items-center font-selfModern">
+          <ul className="flex relative gap-x-5 lg:gap-x-10  xl:gap-x-14 text-sm font-medium traking-[0.42px] items-center font-selfModern">
             {navLinksLeft?.map((links, index) => {
               const isActive = pathname === links.href;
               return (
@@ -100,7 +101,9 @@ const Navbar = () => {
             <Image
               src="/Home/Navbar/Logo.svg"
               alt="Deluxe"
-              className="w-full h-auto object-cover max-w-[175px]"
+              className={`w-full h-auto- object-cover max-w-[175px]- ${
+                bgColor ? "h-10" : "h-full"
+              }`}
               sizes="100vw"
               height={60}
               width={175}
@@ -109,7 +112,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <ul className="flex gap-x-14 text-sm font-medium traking-[0.42px] items-center font-selfModern ">
+          <ul className="flex gap-x-5 lg:gap-x-10 xl:gap-x-14 text-sm font-medium traking-[0.42px] items-center font-selfModern ">
             {navLinksRight?.map((links, index) => {
               const isActive = pathname === links.href;
               return (
@@ -131,6 +134,29 @@ const Navbar = () => {
               );
             })}
           </ul>
+        </div>
+      </nav>
+
+      <nav className=" items-center justify-between mobile-menu ">
+        <Link
+          href={"/"}
+          aria-label="Go to HomePage"
+          className="flex flex-1 justify-center"
+        >
+          <Image
+            src="/Home/Navbar/Logo.svg"
+            alt="Deluxe"
+            className={`w-auto mx-auto max-h-12`}
+            sizes="100vw"
+            height={60}
+            width={175}
+            priority
+            unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
+          />
+        </Link>
+
+        <div className=" ml-auto-">
+          <IoMdMenu className="text-2xl text-main  cursor-pointer" />
         </div>
       </nav>
     </header>

@@ -12,7 +12,7 @@ const ServiceCards = ({ data, index }) => {
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="grid grid-cols-12 relative service_card_bg ">
         <motion.div

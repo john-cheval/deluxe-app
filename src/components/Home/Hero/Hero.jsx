@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Hero.module.css";
 import Image from "next/image";
 import heroImage from "../../../../public/Home/Hero/hero.svg";
 import heroImage1 from "../../../../public/Home/Hero/hero1.jpg";
@@ -7,25 +6,33 @@ import arrowForward from "../../../../public/arrow_forward.svg";
 
 const Hero = () => {
   return (
-    <section className={styles.hero_wrapper}>
-      <div className={styles.hero__left}>
-        <div className={styles.hero__left__image}>
+    <section className="  pb-10  lg:py-28  xl:py-36  xl:px-16 lg:px-12 relative grid grid-cols-12 gap-y-9  md:gap-10 ">
+      <div className="col-span-12 lg:col-span-7 flex  lg:gap-x-4 ">
+        <div className=" w-full lg:md:max-w-[400px] z-50">
           <Image
             src={heroImage1}
             alt="Deluxe_dinning_image1"
-            width={0}
-            height={0}
+            width={100}
+            height={100}
             sizes="100vw"
+            className="w-full h-auto object-cover "
             unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
         </div>
-        <div className={styles.hero__video}>
-          <video autoPlay playsInline loop muted controlsList="nodownload">
+        <div className=" w-full lg:max-w-[300px] lg:h-[368px] lg:self-end">
+          <video
+            autoPlay
+            playsInline
+            loop
+            muted
+            controlsList="nodownload"
+            className="w-full h-full object-cover lg:-mt-16 xl:mt-16"
+          >
             <source src="/Home/Hero/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
-          <div className={styles.hero__image}>
+          <div className="hidden lg:block absolute top-[30px] left-[20%]">
             <Image
               src={heroImage}
               alt="Deluxe_hero_image"
@@ -37,12 +44,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className={styles.hero__right}>
+      <div className="col-span-12 lg:col-span-5 flex gap-y-3 md:gap-y-6 flex-col items-center lg:items-start px-5">
         <h4 className="small_heading">Who we are</h4>
-        <h1 className="main_heading">
+        <h1 className="main_heading text-center lg:text-left">
           Creating unforgettable moments paired with delicious food
         </h1>
-        <p className="description">
+        <p className="description text-center lg:text-left">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and

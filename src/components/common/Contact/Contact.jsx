@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./style.module.css";
-import ContactImg from "../../../../public/contact.png";
+
 import Image from "next/image";
 
 const Contact = ({ isService = false }) => {
   const [formData, seFormData] = useState({
+    company: "",
     name: "",
     email: "",
     phone: "",
@@ -29,35 +30,63 @@ const Contact = ({ isService = false }) => {
     console.log(formData);
   };
   return (
-    <section className={`containers ${isService ? "py-16" : "py-20"} `}>
+    <section
+      className={`containers ${
+        isService ? "py-16" : "py-10 md:py-14 lg:py-20"
+      } `}
+    >
       <div className={styles.contact_container}>
         <div className={styles.contact_left}>
           <Image
-            src={ContactImg}
+            src={"./contact.png"}
             alt="Contact Us"
-            layout="fill"
+            width={400}
+            height={700}
+            sizes="100vw"
+            // layout="fill"
+            className="w-full  object-cover h-full max-h-[700px]"
             unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
         </div>
         <div className={styles.contact_right}>
-          <h2 className="main_heading">Let’s start planning</h2>
+          <h2 className="main_heading text-center md:text-left">
+            Let’s start planning
+          </h2>
           <form onSubmit={handleSubmit} className={styles.form_conntainer}>
-            <div class="form__group field">
-              <input
-                type="text"
-                class="form__field"
-                placeholder="Name"
-                name="name"
-                id="name"
-                required
-                value={formData.name}
-                onChange={handleChnage}
-                maxLength={50}
-              />
-              <label for="name" class="form__label">
-                Name <sup>*</sup>
-              </label>
+            <div className={styles.input_container}>
+              <div class="form__group field">
+                <input
+                  type="text"
+                  class="form__field"
+                  placeholder="Company Name"
+                  name="company"
+                  id="company"
+                  required
+                  value={formData.company}
+                  onChange={handleChnage}
+                />
+                <label for="name" class="form__label">
+                  Company Name <sup>*</sup>
+                </label>
+              </div>
+              <div class="form__group field">
+                <input
+                  type="text"
+                  class="form__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChnage}
+                  maxLength={50}
+                />
+                <label for="name" class="form__label">
+                  Name <sup>*</sup>
+                </label>
+              </div>
             </div>
+
             <div className={styles.input_container}>
               <div class="form__group field">
                 <input
@@ -77,6 +106,7 @@ const Contact = ({ isService = false }) => {
               <div class="form__group field">
                 <input
                   type="number"
+                  inputMode="numeric"
                   class="form__field"
                   placeholder="Phone"
                   name="phone"

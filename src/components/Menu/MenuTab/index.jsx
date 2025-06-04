@@ -1,9 +1,10 @@
 "use client";
-import { serviceTabs } from "@/app/lib/servicesData";
 import React, { useState } from "react";
-import ServiceCards from "../serviceCards";
-import ServiceCardAlter from "../ServiceCardAlter";
 import { motion, AnimatePresence } from "framer-motion";
+import { menuDataTabs } from "@/app/lib/menuData";
+import MenuCards from "../MenuCards";
+import MenuCardAlter from "../MenuCardAlter";
+
 const tabParentVariants = {
   hidden: {},
   show: {
@@ -19,16 +20,14 @@ const tabItemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-const ServiceTab = () => {
-  const [activeTab, setActiveTab] = useState(serviceTabs[0]?.tabTitle);
-
-  const activeTabData = serviceTabs.find((tab) => tab.tabTitle === activeTab);
-
+const MenuTab = () => {
+  const [activeTab, setActiveTab] = useState(menuDataTabs[0]?.tabTitle);
+  const activeTabData = menuDataTabs.find((tab) => tab.tabTitle === activeTab);
   return (
-    <section className="containers pt-16">
-      <article className=" max-w-[80%]- mx-auto w-full flex justify-center ">
-        <div className="flex gap-x-20 gap-y-9 flex-wrap items-center justify-center max-w-[80%]">
-          {serviceTabs?.map((tab, index) => (
+    <section className="containers pt-10">
+      <article className=" max-w-[80%]- mx-auto w-full flex justify-center pb-[100px] border-b border-b-[#926F39]">
+        <div className="flex gap-x-14 gap-y-6 flex-wrap items-center justify-center ">
+          {menuDataTabs?.map((tab, index) => (
             <motion.div
               key={index}
               onClick={() => setActiveTab(tab?.tabTitle)}
@@ -65,14 +64,14 @@ const ServiceTab = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="pt-20 space-y-14"
+          className="pt-10 space-y-10"
         >
-          {activeTabData?.services?.map((service, index) => {
+          {activeTabData?.Menus?.map((menu, index) => {
             const isEven = index % 2 === 0;
             return isEven ? (
-              <ServiceCards key={index} data={service} index={index} />
+              <MenuCards key={index} data={menu} index={index} />
             ) : (
-              <ServiceCardAlter key={index} data={service} index={index} />
+              <MenuCardAlter key={index} data={menu} index={index} />
             );
           })}
         </motion.div>
@@ -81,4 +80,4 @@ const ServiceTab = () => {
   );
 };
 
-export default ServiceTab;
+export default MenuTab;
