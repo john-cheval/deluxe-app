@@ -10,7 +10,7 @@ const Hero = ({ imageUrl }) => {
         height={450}
         width={1200}
         sizes="100vw"
-        className="h-auto w-full object-cover max-h-[450px]"
+        className="md:h-auto w-full h-[400px] object-cover md:max-h-[450px]"
         unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
       />
 
