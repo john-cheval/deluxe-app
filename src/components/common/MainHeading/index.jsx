@@ -11,8 +11,8 @@ const MainHeading = ({
   return (
     <div
       className={` ${
-        isTop ? "pt-[200px]" : "pt-16"
-      }  flex flex-col items-center gap-y-3  -ml-[5%]`}
+        isTop ? "pt-[200px]" : " pt-8 md:pt-12 lg:pt-16"
+      }  flex flex-col items-center gap-y-2 md:gap-y-3  -ml-[5%]`}
     >
       <motion.p
         initial={{ opacity: 0, y: 20 }}

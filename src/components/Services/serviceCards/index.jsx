@@ -16,7 +16,7 @@ const ServiceCards = ({ data, index }) => {
     >
       <div className="grid grid-cols-12 relative service_card_bg ">
         <motion.div
-          className="col-span-8"
+          className="col-span-12 md:col-span-8"
           initial={{ scale: 0.95 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -35,33 +35,33 @@ const ServiceCards = ({ data, index }) => {
       </div>
 
       <motion.div
-        className="grid grid-cols-12 -mt-[30%] relative"
+        className="grid grid-cols-12 md:-mt-[30%] relative"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div
-          className="col-start-5 -col-end-1  py-14 pl-16 pr-8"
+          className="md:col-start-5 md:-col-end-1 col-span-12 py-8  md:py-14 md:pl-16 md:pr-8 px-5"
           style={{ backgroundColor: theme.bg, color: theme.text }}
         >
           <div className="">
-            <h3 className=" text-4xl  font-americana font-medium leading-[146%] tracking-[1.05px]">
+            <h3 className=" text-2xl lg:text-3xl xl:text-4xl  font-americana font-medium leading-[146%] tracking-[1.05px] mb-3 md:mb-5 text-center md:text-left">
               {data?.title}
             </h3>
-            <h5 className=" text-2xl  font-americana font-medium leading-[146%] tracking-[0.75px]">
+            <h5 className=" text-lg md:text-xl lg:text-2xl  font-americana font-medium leading-[146%] tracking-[0.75px] text-center md:text-left">
               {data?.subTitle}
             </h5>
           </div>
-          <p className="font-helvetica text-base font-light leading-[203%] tracking-[0.48px] mt-7">
+          <p className="font-helvetica text-base font-light leading-[203%] tracking-[0.48px] mt-3 md:mt-7 text-center md:text-left">
             {data?.description}
           </p>
 
-          <ul className="mt-5 w-fit">
+          <ul className=" w-fit  mx-auto md:mx-0 pt-5  ">
             {data?.list2?.map((item, index) => {
               return (
                 <li
-                  className={`font-helvetica text-base font-light leading-[339%] tracking-[0.48px] border ${
+                  className={`font-helvetica text-base font-light leading-[250%] md:leading-[339%] tracking-[0.48px] border text-center md:text-left py-2 md:py-0 ${
                     index === 0 ? "border-t border-b" : "border-b border-t-0"
                   } border-x-0 border-dashed border-[#FFf]-`}
                   key={index}
