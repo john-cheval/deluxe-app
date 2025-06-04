@@ -7,7 +7,7 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <div>
+    <div className="service-bg">
       {" "}
       <Hero imageUrl={"/menu/banner.jpg"} />
       <MainHeading
