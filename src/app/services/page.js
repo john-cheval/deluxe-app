@@ -6,7 +6,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="about-bg-">
+    <div className="service-bg">
       <Hero imageUrl={"/services/banner.jpg"} />
       <MainHeading
         small_title={"What we do"}

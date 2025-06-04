@@ -11,8 +11,10 @@ const MainHeading = ({
   return (
     <div
       className={` ${
-        isTop ? "pt-[200px]" : " pt-8 md:pt-12 lg:pt-16"
-      }  flex flex-col items-center gap-y-2 md:gap-y-3  -ml-[5%]`}
+        isTop
+          ? "pt-[125px]  md:pt-[180px]  lg:pt-[200px]"
+          : " pt-8 md:pt-12 lg:pt-16"
+      }  flex flex-col items-center gap-y-2 md:gap-y-3  md:-ml-[5%] containers`}
     >
       <motion.p
         initial={{ opacity: 0, y: 20 }}
@@ -39,7 +41,8 @@ const MainHeading = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-3xl font-americana font-medium text-main leading-[146%] tracking-[0.9px]"
+          className="text-main font-americana text-xl md:text-2xl lg:text-3xl xl:text-[45px] font-medium !leading-[146%] tracking-[1.35px] max-w-[600px];
+} text-center"
         >
           {subTitle}
         </motion.h2>

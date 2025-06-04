@@ -56,26 +56,6 @@ const Testimonials = () => {
             })}
           </Swiper>
         </div>
-        {/* <div className="carousel" ref={emblaRef}>
-          <div className="carouselContainer">
-            {homeTestimonialData?.map((data) => (
-              <div key={`index-${data.id}`} className={styles.slide}>
-                <Image
-                  src={"./quote.svg"}
-                  alt="quote"
-                  height={70}
-                  width={50}
-                  sizes="100vw"
-                  unoptimized={
-                    process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"
-                  }
-                />
-                <p>{data.description}</p>
-                <h5>{data.author}</h5>
-              </div>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ const itemVariants = {
 };
 const SectionOne = () => {
   return (
-    <section className="containers pt-6 pb-20">
+    <section className="containers pt-6 pb-8 md:pb-10 lg:pb-16 xl:pb-20">
       <motion.div
         className="div"
         variants={containerVariants}
@@ -52,23 +52,23 @@ const SectionOne = () => {
           )}
         </motion.div>
 
-        <div className={`flex flex-col gap-y-2 pt-7`}>
+        <div className={`flex flex-col gap-y-2 pt-5 md:pt-7`}>
           <motion.span
             variants={itemVariants}
-            className="text-secondary  font-helvetica text-sm font-medium leading-[179%] tracking-[0.42px]"
+            className="text-secondary  font-helvetica text-sm font-medium leading-[179%] tracking-[0.42px] text-center md:text-left"
           >
             10/12/2025
           </motion.span>
           <motion.h2
             variants={itemVariants}
-            className="text-main font-americana mb-3 text-[28px] font-medium leading-[160%] tracking-[0.66px] "
+            className="text-main font-americana md:mb-3 text-xl md:text-2xl lg:text-[28px] font-medium leading-[160%] tracking-[0.66px] text-center md:text-left "
           >
             Lorem ipsum is a dummy or placeholder
           </motion.h2>
 
           <motion.div
             variants={itemVariants}
-            className="description space-y-11 !max-w-full"
+            className="description space-y-3 md:space-y-6 lg:space-y-11 !max-w-full text-center md:text-left"
           >
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
