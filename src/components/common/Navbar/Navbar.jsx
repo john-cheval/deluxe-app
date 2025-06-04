@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <header
       className={`containers   font-selfModern bg-transparent z-[999] fixed  ease-in-out w-full transition-all duration-500  ${
-        bgColor ? "bg-white py-5 shadow-md " : "py-7"
+        bgColor ? "bg-white pt-2 pb-5 shadow-md " : "py-7"
       } ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >
       <nav className="hide-menu">
@@ -101,7 +101,9 @@ const Navbar = () => {
             <Image
               src="/Home/Navbar/Logo.svg"
               alt="Deluxe"
-              className="w-full h-auto object-cover max-w-[175px]"
+              className={`w-full h-auto- object-cover max-w-[175px]- ${
+                bgColor ? "h-10" : "h-full"
+              }`}
               sizes="100vw"
               height={60}
               width={175}
@@ -144,7 +146,7 @@ const Navbar = () => {
           <Image
             src="/Home/Navbar/Logo.svg"
             alt="Deluxe"
-            className="w-auto mx-auto max-h-12"
+            className={`w-auto mx-auto max-h-12`}
             sizes="100vw"
             height={60}
             width={175}

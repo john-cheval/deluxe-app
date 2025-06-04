@@ -1,4 +1,4 @@
-import Achievements from "@/components/Home/Achivements/Achievements";
+// import Achievements from "@/components/Home/Achivements/Achievements";
 // import Clients from "@/components/Home/Clients/Clients";
 import Deluxe from "@/components/Home/Deluxe/Deluxe";
 import Experience from "@/components/Home/Experience/Experience";
@@ -16,9 +16,9 @@ export default function Home() {
       <Experience />
       <Deluxe />
       <Menu />
-      {/* <Achievements />
       <Testimonials />
-      <Contact /> */}
+      <Contact />
+      {/* <Achievements /> */}
       {/* <Clients /> */}
     </>
   );
