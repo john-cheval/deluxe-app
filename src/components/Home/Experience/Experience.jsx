@@ -6,6 +6,7 @@ import arrowForward from "../../../../public/arrow_forward.svg";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   const swiperRef = useRef(null);
@@ -13,12 +14,34 @@ const Experience = () => {
   return (
     <section className=" xl:px-16 lg:px-12 sm:px-8 px-5 pb-10 md:pb-12 lg:pb-16 xl:pb-28 overflow-hidden">
       <div className="flex flex-col items-center justify-center gap-y-2 mb-10">
-        <h4 className="small_heading">Deluxe</h4>
-        <h2 className="main_heading">Experience</h2>
-        <p className="description text-center">
+        <motion.h4
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="small_heading"
+        >
+          Deluxe
+        </motion.h4>
+        <motion.h2
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="main_heading"
+        >
+          Experience
+        </motion.h2>
+        <motion.p
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="description text-center"
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard
-        </p>
+        </motion.p>
       </div>
 
       <div className="w-full">
@@ -63,7 +86,17 @@ const Experience = () => {
                 key={index}
                 className="flex flex-col gap-y-7 mt-auto"
               >
-                <div className="max-h-[450px]- max-w-[250px]-">
+                <motion.div
+                  initial={{ y: 30, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    ease: "easeOut",
+                    delay: index * 0.1,
+                  }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="max-h-[450px]- max-w-[250px]-"
+                >
                   <Image
                     src={data?.imageUrl}
                     alt={data?.title}
@@ -75,15 +108,25 @@ const Experience = () => {
                       process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"
                     }
                   />
-                </div>
-                <div className="flex flex-col gap-y-1 justify-center mt-4 md:mt-7 ">
+                </motion.div>
+                <motion.div
+                  initial={{ y: 30, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    ease: "easeOut",
+                    delay: index * 0.1,
+                  }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="flex flex-col gap-y-1 justify-center mt-4 md:mt-7 "
+                >
                   <h5 className="text-secondary text-center font-americana text-lg md:text-xl font-medi leading-[146%] tracking-[0.6px]">
                     {data.title}
                   </h5>
                   <p className="description !text-center !text-sm md:!text-base">
                     {data.description}
                   </p>
-                </div>
+                </motion.div>
               </SwiperSlide>
             );
           })}

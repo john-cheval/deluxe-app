@@ -129,14 +129,13 @@ const Navbar = () => {
                         : "after:invisible"
                     }`}
                   >
-                    {links?.type === "link" ? (
-                      <Link href={links.href}>{links.label}</Link>
-                    ) : (
-                      <button className="nav_btn">{links.label}</button>
-                    )}
+                    <Link href={links.href}>{links.label}</Link>
                   </li>
                 );
               })}
+              <li>
+                <button className="nav_btn">Get quote</button>
+              </li>
             </ul>
           </div>
         </nav>
@@ -223,7 +222,6 @@ const Navbar = () => {
                   // const url = link?.href === "" ? "/" : link?.href;
                   const isActive = pathname === link?.href;
 
-                  console.log(link?.href, "link");
                   return (
                     <li
                       key={index}

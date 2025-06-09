@@ -75,7 +75,7 @@ const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-y-5 md:gap-y-7 pt-5 md:pt-8"
+        className="flex flex-col gap-y-5 md:gap-y-7 pt-5 md:pt-8 md:pb-10"
       >
         {" "}
         <motion.input

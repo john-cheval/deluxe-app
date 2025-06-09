@@ -23,7 +23,7 @@ const SectionOne = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col gap-y-2 md:gap-y-5 mt-3 md:mt-8 items-center"
+            className="flex flex-col gap-y-2 md:gap-y-5 mt-3 md:mt-8 items-center md:items-start"
           >
             <Link
               href={"tel:+971 000 00000 000"}
