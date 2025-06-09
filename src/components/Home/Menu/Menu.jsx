@@ -1,24 +1,66 @@
 import React from "react";
 import { homeMenuData } from "@/data/homeData";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 const Menu = () => {
   return (
     <section className="py-14 md:pt-16 containers md:pb-20 lg:pb-24">
       <div className="flex flex-col items-center justify-center gap-3">
-        <h4 className="small_heading ">Deluxe</h4>
-        <h2 className="main_heading">Menu Solutions</h2>
-        <p className="description text-center">
+        <motion.h4
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeOut",
+          }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="small_heading "
+        >
+          Deluxe
+        </motion.h4>
+        <motion.h2
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeOut",
+            delay: 0.1,
+          }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="main_heading"
+        >
+          Menu Solutions
+        </motion.h2>
+        <motion.p
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeOut",
+            delay: 0.2,
+          }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="description text-center"
+        >
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard
-        </p>
+        </motion.p>
       </div>
 
       <div className="pt-7 md:pt-12 gap-x-5  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-y-20 mb-20">
-        {homeMenuData?.map((data) => (
-          <div
+        {homeMenuData?.map((data, index) => (
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeOut",
+              delay: index * 0.1,
+            }}
+            viewport={{ once: true, amount: 0.2 }}
             className="flex flex-col items-center gap-8 relative menu__card  md:max-w-[250px]-  w-full"
-            key={`index-${data.id}`}
+            key={`index-${data.id}` || index}
           >
             <div className="sm:max-h-[50px] max-h-[30px]">
               <Image
@@ -37,7 +79,7 @@ const Menu = () => {
             <h5 className="text-main text-center font-americana text-sm sm:text-base xl:text-lg font-medium leading-[128%] tracking-[0.54px]">
               {data.title}
             </h5>
-          </div>
+          </motion.div>
         ))}
       </div>
 

@@ -38,11 +38,11 @@ const navLinksRight = [
     type: "link",
   },
 
-  {
-    label: "Get quote",
-    type: "button",
-    href: "/",
-  },
+  // {
+  //   label: "Get quote",
+  //   type: "button",
+  //   href: "/",
+  // },
 ];
 
 export { navLinksLeft, navLinksRight };

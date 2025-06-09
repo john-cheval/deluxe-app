@@ -27,7 +27,6 @@ const Contact = ({ isService = false }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
   };
   return (
     <section
@@ -71,11 +70,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="text"
-                  class="form__field"
+                  className="form__field"
                   placeholder="Company Name"
                   name="company"
                   id="company"
@@ -83,7 +82,7 @@ const Contact = ({ isService = false }) => {
                   value={formData.company}
                   onChange={handleChnage}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Company Name <sup>*</sup>
                 </label>
               </motion.div>
@@ -92,11 +91,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="text"
-                  class="form__field"
+                  className="form__field"
                   placeholder="Name"
                   name="name"
                   id="name"
@@ -105,7 +104,7 @@ const Contact = ({ isService = false }) => {
                   onChange={handleChnage}
                   maxLength={50}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Name <sup>*</sup>
                 </label>
               </motion.div>
@@ -117,11 +116,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.3 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="email"
-                  class="form__field"
+                  className="form__field"
                   placeholder="Email"
                   name="email"
                   id="email"
@@ -129,7 +128,7 @@ const Contact = ({ isService = false }) => {
                   value={formData.email}
                   onChange={handleChnage}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Email <sup>*</sup>
                 </label>
               </motion.div>
@@ -138,12 +137,12 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.4 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="number"
                   inputMode="numeric"
-                  class="form__field"
+                  className="form__field"
                   placeholder="Phone"
                   name="phone"
                   id="phone"
@@ -152,7 +151,7 @@ const Contact = ({ isService = false }) => {
                   onChange={handleChnage}
                   maxLength={15}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Phone <sup>*</sup>
                 </label>
               </motion.div>
@@ -163,11 +162,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.5 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="text"
-                  class="form__field"
+                  className="form__field"
                   placeholder="guests"
                   name="guests"
                   id="guests"
@@ -175,7 +174,7 @@ const Contact = ({ isService = false }) => {
                   value={formData.numberOfGuests}
                   onChange={handleChnage}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Number of guests
                 </label>
               </motion.div>
@@ -184,11 +183,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.5 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="text"
-                  class="form__field"
+                  className="form__field"
                   placeholder="Type of events"
                   name="events"
                   id="events"
@@ -196,7 +195,7 @@ const Contact = ({ isService = false }) => {
                   value={formData.typeOfEvents}
                   onChange={handleChnage}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Type of events
                 </label>
               </motion.div>
@@ -207,11 +206,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.6 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="date"
-                  class="form__field"
+                  className="form__field"
                   placeholder="date"
                   name="date"
                   id="date"
@@ -219,7 +218,7 @@ const Contact = ({ isService = false }) => {
                   value={formData.date}
                   onChange={handleChnage}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Date of event
                 </label>
               </motion.div>
@@ -228,11 +227,11 @@ const Contact = ({ isService = false }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 }}
                 viewport={{ once: true, amount: 0.2 }}
-                class="form__group field"
+                className="form__group field"
               >
                 <input
                   type="text"
-                  class="form__field"
+                  className="form__field"
                   placeholder="venue"
                   name="venue"
                   id="venue"
@@ -240,7 +239,7 @@ const Contact = ({ isService = false }) => {
                   value={formData.venue}
                   onChange={handleChnage}
                 />
-                <label for="name" class="form__label">
+                <label htmlFor="name" className="form__label">
                   Venue
                 </label>
               </motion.div>
@@ -250,17 +249,17 @@ const Contact = ({ isService = false }) => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
-              class="form__group field"
+              className="form__group field"
             >
               <input
                 type=""
-                class="form__field"
+                className="form__field"
                 placeholder="Name"
                 name="name"
                 id="name"
                 required
               />
-              <label for="name" class="form__label">
+              <label htmlFor="name" className="form__label">
                 Special Request
               </label>
             </motion.div>
