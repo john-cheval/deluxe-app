@@ -87,7 +87,7 @@ const Deluxe = () => {
               delay: 0.3,
             }}
             viewport={{ once: true, amount: 0.2 }}
-            className="description !text-white !max-w-[500px]- relative z-50"
+            className="description !text-white !max-w-[500px]- relative z-50 text-center md:text-left"
           >
             Expertise in large-scale catering Premium ingredients & impeccable
             service Trusted by major organizations & event agencies Premium
