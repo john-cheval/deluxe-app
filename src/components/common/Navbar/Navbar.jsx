@@ -83,7 +83,11 @@ const Navbar = () => {
           <div className="pt-3  flex items-center justify-between">
             <ul className="flex relative gap-x-5 lg:gap-x-10  xl:gap-x-14 text-sm font-medium traking-[0.42px] items-center font-selfModern">
               {navLinksLeft?.map((links, index) => {
-                const isActive = pathname === links.href;
+                // const isActive = pathname === links.href;
+                const isActive =
+                  links.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(links.href);
                 return (
                   <li
                     key={index}
@@ -118,7 +122,12 @@ const Navbar = () => {
 
             <ul className="flex gap-x-5 lg:gap-x-10 xl:gap-x-14 text-sm font-medium traking-[0.42px] items-center font-selfModern ">
               {navLinksRight?.map((links, index) => {
-                const isActive = pathname === links.href;
+                // const isActive = pathname === links.href;
+                // const isActive = pathname.includes(links.href);
+                const isActive =
+                  links.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(links.href);
                 return (
                   <li
                     key={index}
@@ -158,7 +167,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className=" ml-auto-">
+          <div className=" ml-auto- mt-2">
             <IoMdMenu
               className="text-2xl text-main  cursor-pointer"
               onClick={() => setIsMobileOpen(true)}
@@ -220,7 +229,11 @@ const Navbar = () => {
               <ul className="flex flex-col gap-y-6">
                 {[...navLinksLeft, ...navLinksRight]?.map((link, index) => {
                   // const url = link?.href === "" ? "/" : link?.href;
-                  const isActive = pathname === link?.href;
+                  // const isActive = pathname === link?.href;
+                  const isActive =
+                    link.href === "/"
+                      ? pathname === "/"
+                      : pathname.startsWith(link.href);
 
                   return (
                     <li

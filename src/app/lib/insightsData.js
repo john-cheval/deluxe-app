@@ -2,7 +2,7 @@ export const insightsData = [
   {
     id: 1,
     date: "10/12/2025",
-    imageUrl: "/insights/image-2.jpg",
+    imageUrl: "/Insights/image-2.jpg",
     title: "Lorem ipsum is a dummy or placeholder",
     description:
       "Corporate lunch, Conference, Product launches, Brand activation etc",
@@ -34,7 +34,7 @@ export const insightsData = [
   {
     id: 5,
     date: "10/12/2025",
-    imageUrl: "/insights/image-1.jpg",
+    imageUrl: "/Insights/image-1.jpg",
     title: "Lorem ipsum is a dummy or placeholder",
     description:
       "Corporate lunch, Conference, Product launches, Brand activation etc",
@@ -42,7 +42,7 @@ export const insightsData = [
   {
     id: 6,
     date: "10/12/2025",
-    imageUrl: "/insights/image.jpg",
+    imageUrl: "/Insights/image.jpg",
     title: "Lorem ipsum is a dummy or placeholder",
     description:
       "Corporate lunch, Conference, Product launches, Brand activation etc",

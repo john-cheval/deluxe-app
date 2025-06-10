@@ -9,7 +9,7 @@ import { truncateByWords } from "@/app/lib/truncateByWords";
 const Cards = ({ cardData, ind, slides = "false" }) => {
   const { text: descText, isTruncated: showReadMore } = truncateByWords(
     cardData?.description,
-    10,
+    cardData?.imageUrl ? 10 : 30,
     false
   );
   return (
@@ -57,10 +57,10 @@ const Cards = ({ cardData, ind, slides = "false" }) => {
           <span className="text-secondary font-helvetica text-sm font-medium leading-[179%] tracking-[0.42px] text-center md:text-left">
             {cardData?.date}
           </span>
-          <h2 className="text-main font-americana text-lg md:text-xl lg:text-[22px] font-medium leading-[160%] tracking-[0.66px] max-w-[350px] text-center md:text-left">
+          <h2 className="text-main font-americana text-lg md:text-xl lg:text-[22px] font-medium leading-[160%] tracking-[0.66px] w-full lg:max-w-[350px] text-center md:text-left">
             {cardData?.title}
           </h2>
-          <p className="description max-w-[330px] text-center md:text-left">
+          <p className="description w-full md:max-w-[330px] text-center md:text-left">
             {descText}
             {showReadMore && (
               <Link

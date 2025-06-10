@@ -12,6 +12,13 @@ import { IoMail } from "react-icons/io5";
 import * as motion from "motion/react-client";
 
 const Footer = () => {
+  const getIdFromTitle = (title) =>
+    title
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/&/g, "")
+      .replace(/[^a-z0-9-]/g, "");
+
   return (
     <footer className="containers pt-10 md:pt-[68px] pb-14 bg-main text-light">
       <div className="flex gap-8 justify-center items-center md:items-start lg:justify-between pb-10 md:pb-14 flex-wrap lg:flex-nowrap">
@@ -75,7 +82,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-y-4 md:gap-6 md:flex-shrink-0">
+        <div className="flex flex-col gap-y-4 md:gap-4 md:flex-shrink-0">
           <motion.h4
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -101,7 +108,8 @@ const Footer = () => {
               >
                 <Link
                   className="text-[#adadad] font-helvetica text-base leading-[194%] tracking-[0.48px] hover:text-light transition-all duration-300 space-x-2"
-                  href={links?.link}
+                  // href={`/services#${links?.link}`}
+                  href={`/services#${getIdFromTitle(links?.link)}`}
                 >
                   {links?.title}{" "}
                   {index !== footerLinksData.length - 1 && (
@@ -140,7 +148,7 @@ const Footer = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="text-center md:text-left"
+              className="text-center md:text-left -mt-2"
             >
               for our newsletter
             </motion.p>

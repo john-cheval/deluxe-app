@@ -33,6 +33,12 @@
   width: fit-content;
   margin: 0 auto;
   margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contact_btn:hover {
+  background-color: #e1bc75;
+  color: white;
+  cursor: pointer;
 }
 
 @media (min-width: 1500px) {
@@ -72,5 +78,8 @@
   .input_container {
     flex-direction: column;
     gap: 20px;
+  }
+  .form_conntainer {
+    margin-top: 30px;
   }
 }
