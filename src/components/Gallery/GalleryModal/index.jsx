@@ -25,7 +25,7 @@ const GalleryModal = ({ isOpen, onClose, data, initialIndex }) => {
       <Backdrop onClick={onClose}>
         {isOpen && (
           <motion.div
-            className="relative  w-full max-w-2xl md:max-w-3xl lg:max-w-5xl mx-auto "
+            className="relative  w-full max-w-[300px] sm:max-w-2xl md:max-w-3xl lg:max-w-5xl mx-auto "
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
@@ -65,15 +65,15 @@ const GalleryModal = ({ isOpen, onClose, data, initialIndex }) => {
                       }
                     />
                   )}
-                  <p className="text-white mt-3 text-lg text-center font-helvetica font-normal">
+                  <p className="text-white mt-3 text-base md:text-lg text-center font-helvetica font-normal">
                     {item?.description}
                   </p>
 
-                  <button className="swiper-button-prev-custom absolute top-1/2 left-3 transform -translate-y-1/2 z-20 text-4xl text-white bg-black/40 rounded-full p-2 hover:bg-black/60 transition duration-300">
+                  <button className="swiper-button-prev-custom absolute top-1/2 left-3 transform -translate-y-1/2 z-20 text-3xl md:text-4xl text-white bg-black/40 rounded-full   p-2 hover:bg-black/60 transition duration-300">
                     <span className="sr-only">Previous</span>
                     <MdKeyboardArrowLeft />
                   </button>
-                  <button className="swiper-button-next-custom absolute top-1/2 right-3 transform -translate-y-1/2 z-20 text-4xl text-white bg-black/40 rounded-full p-2 hover:bg-black/60 transition duration-300">
+                  <button className="swiper-button-next-custom absolute top-1/2 right-3 transform -translate-y-1/2 z-20 text-3xl md:text-4xl text-white bg-black/40 rounded-full p-2 hover:bg-black/60 transition duration-300">
                     <span className="sr-only">Next</span>
                     <MdKeyboardArrowRight />
                   </button>
@@ -83,7 +83,7 @@ const GalleryModal = ({ isOpen, onClose, data, initialIndex }) => {
 
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 bg-main rounded-full p-2 z-10 cursor-pointer"
+              className="absolute top-2 md:top-4 right-2 md:right-4 bg-main rounded-full p-2 z-10 cursor-pointer"
             >
               <GrClose className="text-sm md:text-lg text-white " />
             </button>

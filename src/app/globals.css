@@ -272,10 +272,9 @@ input[type="number"]::-webkit-outer-spin-button {
   display: block;
   transition: 0.2s;
   color: var(--font-color);
-  font-family: var(--font-helvetica);
   line-height: 164%;
   font-weight: 400;
-  @apply md:text-base text-sm;
+  @apply md:text-base text-sm font-helvetica;
 }
 
 .form__field:focus {
