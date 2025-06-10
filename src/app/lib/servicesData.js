@@ -380,3 +380,91 @@ export const serviceTabs = [
     ],
   },
 ];
+
+export const serviceTabsData = [
+  {
+    title: "Event Catering",
+    image: "/services/1.jpg",
+    subTitle: "Your Catering Partner for Large Scale Events",
+    description:
+      "Large-Scale Catering for Concerts, Festivals & Major Events We specialize in large-scale event catering that delivers quality, speed, and reliability — no matter the size of your audience. From music festivals to sporting events, we bring food experiences that satisfy thousands without compromise.",
+    list2: [
+      "Full-service F&B for concerts, festivals, sporting events",
+      "Scalable kitchens and logistics for high-volume demands",
+      "Quick service formats: food stations, mobile kitchens, pre-packed meals",
+      "Custom menus built for diverse crowds & dietary needs",
+      "On-site teams, 24/7 support, health & safety certified",
+    ],
+  },
+  {
+    image: "/services/3.jpg",
+    title: "Large Scale Events",
+    subTitle: "Elevate Your Brand with Memorable Catering",
+    description:
+      "From Executive Lunches to Grand Product Launches We handle the food so you can focus on business. Whether you're hosting a high-stakes conference or an intimate leadership dinner, we deliver elegant, on-brand catering with precision.",
+    list2: [
+      "Curated menus for business events of all sizes",
+      "Nutritionally balanced, dietician-approved",
+      "Scalable to 50 or 5,000+ employees",
+      "Online dashboards for easy management",
+      "Flexible contracts and subscription options",
+    ],
+  },
+  {
+    image: "/services/2.jpg",
+    title: "Corporate Meal Plans",
+    subTitle: "Elevate Your Brand with Memorable Catering",
+    description:
+      "From Executive Lunches to Grand Product Launches We handle the food so you can focus on business. Whether you're hosting a high-stakes conference or an intimate leadership dinner, we deliver elegant, on-brand catering with precision.",
+    list2: [
+      "Curated menus for business events of all sizes",
+      "Nutritionally balanced, dietician-approved",
+      "Scalable to 50 or 5,000+ employees",
+      "Online dashboards for easy management",
+      "Flexible contracts and subscription options",
+    ],
+  },
+
+  {
+    image: "/services/4.jpg",
+    title: "Hospital & Institutional Catering",
+    subTitle: "Elevate Your Brand with Memorable Catering",
+    description:
+      "From Executive Lunches to Grand Product Launches We handle the food so you can focus on business. Whether you're hosting a high-stakes conference or an intimate leadership dinner, we deliver elegant, on-brand catering with precision.",
+    list2: [
+      "Curated menus for business events of all sizes",
+      "Nutritionally balanced, dietician-approved",
+      "Scalable to 50 or 5,000+ employees",
+      "Online dashboards for easy management",
+      "Flexible contracts and subscription options",
+    ],
+  },
+  {
+    image: "/services/1.jpg",
+    title: "Private Events & Weddings",
+    subTitle: "Elevate Your Brand with Memorable Catering",
+    description:
+      "From Executive Lunches to Grand Product Launches We handle the food so you can focus on business. Whether you're hosting a high-stakes conference or an intimate leadership dinner, we deliver elegant, on-brand catering with precision.",
+    list2: [
+      "Curated menus for business events of all sizes",
+      "Nutritionally balanced, dietician-approved",
+      "Scalable to 50 or 5,000+ employees",
+      "Online dashboards for easy management",
+      "Flexible contracts and subscription options",
+    ],
+  },
+  {
+    image: "/services/3.jpg",
+    title: "Event Company Partnerships",
+    subTitle: "Elevate Your Brand with Memorable Catering",
+    description:
+      "From Executive Lunches to Grand Product Launches We handle the food so you can focus on business. Whether you're hosting a high-stakes conference or an intimate leadership dinner, we deliver elegant, on-brand catering with precision.",
+    list2: [
+      "Curated menus for business events of all sizes",
+      "Nutritionally balanced, dietician-approved",
+      "Scalable to 50 or 5,000+ employees",
+      "Online dashboards for easy management",
+      "Flexible contracts and subscription options",
+    ],
+  },
+];

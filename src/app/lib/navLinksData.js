@@ -1,22 +1,22 @@
 export const footerLinksData = [
   {
     title: "Event Companies",
-    link: "/event",
+    link: "Event Catering",
   },
   {
     title: "Large Scale Events",
-    link: "/event",
+    link: "Large Scale Events",
   },
   {
     title: "Corporate Meal Service",
-    link: "/event",
+    link: "Corporate Meal Plans",
   },
   {
     title: "Hospital Catering",
-    link: "/event",
+    link: "Hospital & Institutional Catering",
   },
   {
     title: "Private Luxury Events & Weddings",
-    link: "/event",
+    link: "Private Events & Weddings",
   },
 ];

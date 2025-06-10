@@ -2,13 +2,14 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
-// import "swiper/css/navigation";
+import "swiper/css/navigation";
 import Image from "next/image";
 import { GrClose } from "react-icons/gr";
 import isVideo from "@/app/lib/checkIsVideo";
 import Backdrop from "@/components/shared/Backdrop";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const GalleryModal = ({ isOpen, onClose, data, initialIndex }) => {
   useEffect(() => {
@@ -33,14 +34,15 @@ const GalleryModal = ({ isOpen, onClose, data, initialIndex }) => {
           >
             <Swiper
               initialSlide={initialIndex}
-              navigation
+              navigation={{
+                nextEl: ".swiper-button-next-custom",
+                prevEl: ".swiper-button-prev-custom",
+              }}
               loop
-              modules={
-                [
-                  /* Navigation */
-                  // Autoplay,
-                ]
-              }
+              modules={[
+                Navigation,
+                // Autoplay,
+              ]}
               className="overflow-hidden "
             >
               {data.map((item, index) => (
@@ -63,6 +65,18 @@ const GalleryModal = ({ isOpen, onClose, data, initialIndex }) => {
                       }
                     />
                   )}
+                  <p className="text-white mt-3 text-lg text-center font-helvetica font-normal">
+                    {item?.description}
+                  </p>
+
+                  <button className="swiper-button-prev-custom absolute top-1/2 left-3 transform -translate-y-1/2 z-20 text-4xl text-white bg-black/40 rounded-full p-2 hover:bg-black/60 transition duration-300">
+                    <span className="sr-only">Previous</span>
+                    <MdKeyboardArrowLeft />
+                  </button>
+                  <button className="swiper-button-next-custom absolute top-1/2 right-3 transform -translate-y-1/2 z-20 text-4xl text-white bg-black/40 rounded-full p-2 hover:bg-black/60 transition duration-300">
+                    <span className="sr-only">Next</span>
+                    <MdKeyboardArrowRight />
+                  </button>
                 </SwiperSlide>
               ))}
             </Swiper>

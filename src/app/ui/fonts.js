@@ -19,6 +19,21 @@ export const Helvertica = localFont({
       weight: "400",
       style: "normal",
     },
+    {
+      path: "./fonts/HelveticaNeueBold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/HelveticaNeueLight.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/HelveticaNeueMedium.otf",
+      weight: "500",
+      style: "normal",
+    },
   ],
   variable: "--font-helvetica",
   display: "swap",
@@ -32,12 +47,7 @@ export const SelfModern = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/Self Modern Regular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Self Modern Regular.woff2",
+      path: "./fonts/SelfModern-Book.ttf",
       weight: "400",
       style: "normal",
     },
