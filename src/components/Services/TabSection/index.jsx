@@ -1,5 +1,5 @@
 "use client";
-import { serviceTabs, serviceTabsData } from "@/app/lib/servicesData";
+import { serviceTabsData } from "@/app/lib/servicesData";
 import React, { useEffect, useRef, useState } from "react";
 import ServiceCards from "../serviceCards";
 import ServiceCardAlter from "../ServiceCardAlter";
@@ -20,7 +20,9 @@ const tabItemVariants = {
 };
 
 const ServiceTab = () => {
-  const [activeTab, setActiveTab] = useState(serviceTabs[0]?.tabTitle);
+  const [activeTab, setActiveTab] = useState(serviceTabsData[0]?.title);
+  const [bgColor, setBgColor] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
   const getIdFromTitle = (title) =>
     title
       .toLowerCase()
@@ -44,34 +46,28 @@ const ServiceTab = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            // if (id) setActiveTab(id);
-          }
-        });
-      },
-      {
-        rootMargin: "-40% 0px -55% 0px",
-        threshold: 0,
-      }
-    );
+  // useEffect(() => {
+  //   let lastScrollY = window.scrollY;
 
-    Object.values(sectionRefs.current).forEach((section) => {
-      if (section) observer.observe(section);
-    });
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
 
-    return () => {
-      Object.values(sectionRefs.current).forEach((section) => {
-        if (section) observer.unobserve(section);
-      });
-    };
-  }, []);
+  //     setBgColor(currentScrollY > 500);
 
-  const activeTabData = serviceTabsData.find((tab) => tab?.title === activeTab);
+  //     if (currentScrollY > lastScrollY && currentScrollY > 80) {
+  //       setShowNavbar(false);
+  //     } else {
+  //       setShowNavbar(true);
+  //     }
+
+  //     lastScrollY = currentScrollY;
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  // const activeTabData = serviceTabsData.find((tab) => tab?.title === activeTab);
 
   return (
     <section className="containers pt-8 md:pt-12 lg:pt-16">
@@ -79,29 +75,22 @@ const ServiceTab = () => {
         className=" max-w-[80%]- md:mx-auto w-full flex md:justify-center "
         // style={{
         //   position: "sticky",
-        //   top: "100px",
+        //   top: showNavbar ? "83px" : "0px",
         //   alignSelf: "start",
         //   zIndex: 999999,
-        //   backgroundColor: "white",
+        //   backgroundColor: bgColor ? "white" : "transparent",
         //   padding: "10px 0",
+        //   transition: "all 0.5s ease",
         // }}
       >
         <div className=" flex gap-x-6 md:gap-x-10 lg:gap-x-16 xl:gap-x-20  gap-y-4 md:gap-y-5 lg:gap-y-9 flex-wrap items-center justify-center md:max-w-[80%]">
           {serviceTabsData?.map((tab, index) => {
-            const id = getIdFromTitle(tab.title);
             return (
               <motion.div
                 key={index}
-                // onClick={() => setActiveTab(tab?.title)}
                 onClick={() => {
-                  // setActiveTab(tab.title);
-                  // const section = sectionRefs.current[id];
-                  // if (section) {
-                  //   section.scrollIntoView({
-                  //     behavior: "smooth",
-                  //     block: "start",
-                  //   });
-                  // }
+                  setActiveTab(tab.title);
+
                   const id = getIdFromTitle(tab.title);
                   document
                     .getElementById(id)
@@ -135,33 +124,16 @@ const ServiceTab = () => {
         </div>
       </article>
 
-      {/* <AnimatePresence mode="wait"> */}
       <motion.div
         key={activeTab}
-        // initial={{ opacity: 0, y: 30 }}
-        // animate={{ opacity: 1, y: 0 }}
-        // exit={{ opacity: 0, y: -30 }}
-        // transition={{ duration: 0.5, ease: "easeInOut" }}
         className="pt-10 md:pt-16 lg:pt-20 space-y-5 sm:space-y-8 md:space-y-14"
       >
         {serviceTabsData?.map((service, index) => {
           const isEven = index % 2 === 0;
-          const sectionId = getIdFromTitle(service.title);
           const id = getIdFromTitle(service.title);
-          // return isEven ? (
-          //   <ServiceCards key={index} data={service} index={index} />
-          // ) : (
-          //   <ServiceCardAlter key={index} data={service} index={index} />
-          // );
+
           return (
-            <div
-              // key={index}
-              // id={sectionId}
-              // ref={(el) => (sectionRefs.current[sectionId] = el)}
-              key={id}
-              id={id}
-              ref={(el) => (sectionRefs.current[id] = el)}
-            >
+            <div key={id} id={id} ref={(el) => (sectionRefs.current[id] = el)}>
               {isEven ? (
                 <ServiceCards data={service} index={index} />
               ) : (
@@ -171,7 +143,6 @@ const ServiceTab = () => {
           );
         })}
       </motion.div>
-      {/* </AnimatePresence> */}
     </section>
   );
 };

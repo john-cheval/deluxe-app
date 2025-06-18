@@ -40,7 +40,7 @@ const Modal = ({ handleClose, modalOpen }) => {
             exit="exit"
           >
             <CiCircleCheck className="text-main text-[50px] md:text-[100px]" />
-            <h5 className="text-center font-americana uppercase font-medium text-main text-lg md:text-xl lg:text-[28px]  leading-[153%] max-w-[280px] md:max-w-[320px]">
+            <h5 className="text-center font-americana uppercase font-medium text-main text-lg md:text-xl lg:text-[28px]  !leading-[153%] max-w-[280px] md:max-w-[320px]">
               your form was successfully submitted!
             </h5>
 

@@ -2,6 +2,7 @@ import React from "react";
 import { homeMenuData } from "@/data/homeData";
 import Image from "next/image";
 import * as motion from "motion/react-client";
+import Link from "next/link";
 
 const Menu = () => {
   return (
@@ -83,7 +84,7 @@ const Menu = () => {
         ))}
       </div>
 
-      <button className="buttonOne button mx-auto ">
+      <Link href="/menu" className="buttonOne button mx-auto ">
         {" "}
         View All
         <Image
@@ -94,7 +95,7 @@ const Menu = () => {
           sizes="100vw"
           unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
         />
-      </button>
+      </Link>
     </section>
   );
 };

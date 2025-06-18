@@ -78,7 +78,7 @@ const Deluxe = () => {
               unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
             />
           </motion.div>
-          <motion.p
+          <motion.div
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{
@@ -87,13 +87,16 @@ const Deluxe = () => {
               delay: 0.3,
             }}
             viewport={{ once: true, amount: 0.2 }}
-            className="description !text-white !max-w-[500px]- relative z-50 text-center md:text-left"
+            className="description !text-white !max-w-[500px]- relative z-50 text-center- md:text-left- ml-5"
           >
-            Expertise in large-scale catering Premium ingredients & impeccable
-            service Trusted by major organizations & event agencies Premium
-            ingredients & impeccable service Trusted by major organizations &
-            event agencies
-          </motion.p>
+            <p className="-ml-5">Expertise in large-scale catering</p>
+            <ul className="list-disc">
+              <li>Premium ingredients & impeccable service</li>
+              <li>Trusted by major organizations & event agencies</li>
+              <li>Premium ingredients & impeccable service</li>
+              <li>Trusted by major organizations & event agencies</li>
+            </ul>
+          </motion.div>
 
           {/* <button className="buttonRed button hidden ">
             {" "}

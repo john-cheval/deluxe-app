@@ -7,6 +7,7 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Experience = () => {
   const swiperRef = useRef(null);
@@ -133,7 +134,10 @@ const Experience = () => {
         </Swiper>
       </div>
 
-      <button className="buttonOne button mx-auto !hidden md:!flex">
+      <Link
+        href={"/services"}
+        className="buttonOne button mx-auto !hidden md:!flex"
+      >
         {" "}
         View All
         <Image
@@ -144,7 +148,7 @@ const Experience = () => {
           sizes="100vw"
           unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
         />
-      </button>
+      </Link>
     </section>
   );
 };
