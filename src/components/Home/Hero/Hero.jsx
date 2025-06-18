@@ -4,6 +4,7 @@ import heroImage from "../../../../public/Home/Hero/hero.svg";
 import heroImage1 from "../../../../public/Home/Hero/hero1.jpg";
 import arrowForward from "../../../../public/arrow_forward.svg";
 import * as motion from "motion/react-client";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -96,7 +97,7 @@ const Hero = () => {
           five centuries,Lorem Ipsum is simply dummy text of the printing and
           typesetting industry. Lorem Ipsum has been the industrys
         </motion.p>
-        <button className="buttonOne button">
+        <Link href={"/about"} className="buttonOne button">
           {" "}
           Read More
           <Image
@@ -107,7 +108,7 @@ const Hero = () => {
             sizes="100vw"
             unoptimized={process.env.NEXT_PUBLIC_IMAGE_UNOPTIMIZED === "true"}
           />
-        </button>
+        </Link>
       </div>
     </section>
   );

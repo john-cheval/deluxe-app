@@ -12,8 +12,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const pathname = usePathname();
   const [bgColor, setBgColor] = useState(false);
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
     const currentScrollY = window.scrollY;

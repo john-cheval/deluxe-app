@@ -30,6 +30,7 @@ const Contact = ({ isService = false }) => {
   };
   return (
     <section
+      id="contact-form"
       className={`containers ${
         isService ? "py-10 md:py-14 lg:py-16" : "py-10 md:py-14 lg:py-20"
       } `}

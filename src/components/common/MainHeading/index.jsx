@@ -41,7 +41,7 @@ const MainHeading = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-main font-americana text-xl md:text-2xl lg:text-3xl xl:text-[45px] font-medium !leading-[146%] tracking-[1.35px] max-w-[600px];
+          className="text-main font-americana text-xl md:text-2xl lg:text-3xl  font-medium !leading-[146%] tracking-[1.35px] max-w-[600px];
 } text-center"
         >
           {subTitle}
