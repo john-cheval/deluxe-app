@@ -126,7 +126,7 @@ const Experience = () => {
                   <h5 className="text-secondary text-center font-americana text-lg md:text-xl font-medi leading-[146%] tracking-[0.6px]">
                     {data.title}
                   </h5>
-                  <p className="description !text-center !text-sm md:!text-base">
+                  <p className="description !text-center !text-sm md:!text-base  md:!max-w-[250px]">
                     {data.description}
                   </p>
                 </motion.div>
