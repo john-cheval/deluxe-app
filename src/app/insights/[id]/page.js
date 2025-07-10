@@ -3,6 +3,14 @@ import SectionOne from "@/components/InsightsInner/SectionOne";
 import SectionTwo from "@/components/InsightsInner/SectionTwo";
 import React from "react";
 
+export async function generateMetadata({ params }) {
+  return {
+    title: ` Insights | Deluxe`,
+    description:
+      "Discover event planning inspiration and catering advice from Deluxe experts.",
+  };
+}
+
 const InsightsInnerPage = () => {
   return (
     <>

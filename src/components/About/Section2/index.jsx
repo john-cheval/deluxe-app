@@ -13,7 +13,8 @@ const Section2 = () => {
           viewport={{ once: true }}
           className="main-heading-2 text-center !max-w-[875px]"
         >
-          Catering that scales. Quality that lasts.
+          Catering that scales.
+          <br /> Quality that lasts.
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}

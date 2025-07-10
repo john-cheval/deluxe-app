@@ -14,7 +14,7 @@ const Section4 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="main_heading"
           >
-            Trusted by brands. Chosen for impact.
+            Trusted by brands. <br /> Chosen for impact.
           </motion.h3>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
