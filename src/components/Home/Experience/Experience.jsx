@@ -29,9 +29,9 @@ const Experience = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="main_heading"
+          className="main_heading !text-center"
         >
-          Experience
+          Tailored catering for every occasion
         </motion.h2>
         <motion.p
           initial={{ y: 30, opacity: 0 }}
@@ -39,10 +39,7 @@ const Experience = () => {
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true, amount: 0.2 }}
           className="description text-center"
-        >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard
-        </motion.p>
+        ></motion.p>
       </div>
 
       <div className="w-full">
@@ -119,7 +116,7 @@ const Experience = () => {
                     delay: index * 0.1,
                   }}
                   viewport={{ once: true, amount: 0.2 }}
-                  className="flex flex-col gap-y-1 justify-center mt-4 md:mt-7 "
+                  className="flex flex-col gap-y-1 justify-center- mt-4 md:mt-7 min-h-[100px] "
                 >
                   <h5 className="text-secondary text-center font-americana text-lg md:text-xl font-medi leading-[146%] tracking-[0.6px]">
                     {data.title}

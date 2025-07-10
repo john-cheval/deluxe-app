@@ -44,8 +44,10 @@ const Menu = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="description text-center"
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard
+          From elegant canapés and live stations to full-course fine dining and
+          BBQ spreads, our menu styles are designed to match your event’s mood
+          and scale. Choose from a variety of formats — or mix and match for a
+          custom experience.
         </motion.p>
       </div>
 

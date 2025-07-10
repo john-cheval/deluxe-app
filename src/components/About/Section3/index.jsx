@@ -91,7 +91,7 @@ const Section3 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="main_heading text-center lg:text-left"
           >
-            Our Philosophy & Commitment to Quality
+            More than food. We&lsquo;re your event partner.
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -100,12 +100,13 @@ const Section3 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="description-2 text-center lg:text-left "
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries,Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industrys
+            We’re more than just a catering provider; we’re your end-to-end
+            event food partner. Whether it’s a multi-day conference, an elegant
+            private dinner, or a 5,000-guest concert, we handle everything —
+            from menu design and logistics to staffing and on-site execution.
+            Our operations are backed by a dedicated team of chefs, event
+            managers, and service professionals who take pride in getting every
+            detail right.
           </motion.p>
         </div>
       </div>
