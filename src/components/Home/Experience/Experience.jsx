@@ -29,7 +29,7 @@ const Experience = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="main_heading !text-center"
+          className="main_heading !max-w-full !text-center"
         >
           Tailored catering for every occasion
         </motion.h2>
@@ -39,7 +39,12 @@ const Experience = () => {
           transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true, amount: 0.2 }}
           className="description text-center"
-        ></motion.p>
+        >
+          From corporate conferences and product launches to luxury weddings and
+          private celebrations, we deliver exceptional catering experiences
+          built around your event goals. Our team handles every detail — from
+          menu design to flawless execution — no matter the scale.
+        </motion.p>
       </div>
 
       <div className="w-full">
@@ -121,7 +126,7 @@ const Experience = () => {
                   <h5 className="text-secondary text-center font-americana text-lg md:text-xl font-medi leading-[146%] tracking-[0.6px]">
                     {data.title}
                   </h5>
-                  <p className="description !text-center !text-sm md:!text-base">
+                  <p className="description !text-center !text-sm md:!text-base  md:!max-w-[250px]">
                     {data.description}
                   </p>
                 </motion.div>

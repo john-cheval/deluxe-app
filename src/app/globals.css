@@ -309,9 +309,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .bg-both {
   background-image: url(/common/leftSVG.svg), url(/common/rightsvg.svg);
-  background-position: -5% 50%, 110% 70%;
+  background-position:
+    -5% 50%,
+    110% 70%;
   background-repeat: no-repeat, no-repeat;
-  background-size: 30% auto, 30% auto;
+  background-size:
+    30% auto,
+    30% auto;
 }
 .service_card_bg {
   background: url(/common/leftsvg.svg);

@@ -4,6 +4,12 @@ import MainHeading from "@/components/common/MainHeading";
 import ServiceTab from "@/components/Services/TabSection";
 import React from "react";
 
+export const metadata = {
+  title: "Services | Deluxe Catering ",
+  description:
+    "Explore Deluxe's full-service catering, wedding planning, corporate event management, and private event solutions tailored to your needs.",
+};
+
 const Services = () => {
   return (
     <div className="service-bg">

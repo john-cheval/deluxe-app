@@ -8,6 +8,12 @@ import Menu from "@/components/Home/Menu/Menu";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
 import Contact from "@/components/common/Contact/Contact";
 
+export const metadata = {
+  title: "Deluxe Catering",
+  description:
+    "Experience world-class catering and event planning with Deluxe. From intimate gatherings to grand celebrations, we make every event unforgettable.",
+};
+
 export default function Home() {
   return (
     <>

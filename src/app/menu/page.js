@@ -5,6 +5,12 @@ import Customization from "@/components/Menu/Customizes";
 import MenuTab from "@/components/Menu/MenuTab";
 import React from "react";
 
+export const metadata = {
+  title: "Our Menu | Deluxe Catering",
+  description:
+    "Browse our gourmet catering menu featuring signature dishes, seasonal offerings, and custom menu options for every event.",
+};
+
 const Menu = () => {
   return (
     <div className="service-bg">

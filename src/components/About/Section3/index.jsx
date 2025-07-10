@@ -91,7 +91,7 @@ const Section3 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="main_heading text-center lg:text-left"
           >
-            More than food. We&lsquo;re your event partner.
+            More than food. <br /> We&lsquo;re your event partner.
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
