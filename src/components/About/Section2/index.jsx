@@ -13,7 +13,7 @@ const Section2 = () => {
           viewport={{ once: true }}
           className="main-heading-2 text-center !max-w-[875px]"
         >
-          Creating unforgettable moments paired with delicious food
+          Catering that scales. Quality that lasts.
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -22,12 +22,12 @@ const Section2 = () => {
           viewport={{ once: true }}
           className="description !max-w-[730px] text-center"
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries,Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industrys
+          With years of experience catering across the UAE, we’ve built a
+          reputation for delivering exceptional food experiences at scale. From
+          high-profile corporate events and luxury weddings to large public
+          gatherings and institutional catering, our team understands the unique
+          demands of every format — and delivers with consistency, creativity,
+          and care.
         </motion.p>
       </div>
       <motion.div

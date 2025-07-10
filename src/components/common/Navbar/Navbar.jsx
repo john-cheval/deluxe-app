@@ -143,7 +143,9 @@ const Navbar = () => {
                 );
               })}
               <li>
-                <button className="nav_btn">Get quote</button>
+                <Link href="/contact-us" className="nav_btn">
+                  Get quote
+                </Link>
               </li>
             </ul>
           </div>
@@ -253,39 +255,6 @@ const Navbar = () => {
                   );
                 })}
               </ul>
-
-              {/* <motion.ul className="flex gap-x-2 justify-center mt-auto pt-5  ">
-                <li>
-                  <Link
-                    href={"/"}
-                    target="_blank"
-                    aria-label="Facebook"
-                    className="w-11 h-11 flex items-center justify-center rounded-full border border-main text-main text-sm"
-                  >
-                    <FaFacebookF className="text-sm md:text-lg" />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={"/"}
-                    target="_blank"
-                    aria-label="Instagram"
-                    className="w-11 h-11 flex items-center justify-center rounded-full border border-main text-main text-sm"
-                  >
-                    <FaInstagram className="text-sm md:text-lg" />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href={"/"}
-                    target="_blank"
-                    aria-label="Linkedin"
-                    className="w-11 h-11 flex items-center justify-center rounded-full border border-main text-main text-sm"
-                  >
-                    <FaLinkedinIn className="text-sm md:text-lg" />
-                  </Link>
-                </li>
-              </motion.ul> */}
             </motion.nav>
           </>
         )}

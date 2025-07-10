@@ -2,35 +2,39 @@ const homeExperienceData = [
   {
     id: 1,
     title: "Weddings",
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    description:
+      "Elegant, personalized menus for unforgettable wedding celebrations.",
     imageUrl: "/Home/Experience/exp1.png",
     height: 466,
   },
   {
     id: 2,
     title: "Corporate Events",
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    description:
+      "Professional catering tailored for brand launches and business gatherings.",
     imageUrl: "/Home/Experience/exp2.png",
     height: 331,
   },
   {
     id: 3,
     title: "Private Events",
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    description: "Upscale dining experiences for exclusive private occasions.",
     imageUrl: "/Home/Experience/exp3.png",
     height: 233,
   },
   {
     id: 4,
     title: "Birthdays",
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    description:
+      "Custom catering for milestone celebrations with a refined touch.",
     imageUrl: "/Home/Experience/exp4.png",
     height: 331,
   },
   {
     id: 5,
     title: "Conference",
-    description: "Lorem Ipsum is simply dummy text of the printing",
+    description:
+      "Efficient, high-volume service designed for large professional events.",
     imageUrl: "/Home/Experience/exp5.png",
     height: 466,
   },
@@ -103,20 +107,20 @@ const homeTestimonialData = [
   {
     id: 1,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
-    author: "John doe",
+      "We’ve used them for everything from boardroom lunches to company-wide events, and they’ve delivered flawlessly every time. Reliable, professional, and always on-brand — exactly what we need in a catering partner.",
+    author: "Operations Director, Tech Firm",
   },
   {
     id: 2,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
-    author: "Micheal doe",
+      "As an event agency, we rely on partners who just get it — logistics, timelines, expectations. This team is seamless to work with and consistently exceeds both client and guest expectations.",
+    author: "Founder, Event Management Company ",
   },
   {
     id: 3,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
-    author: "Lara doe",
+      "Our wedding catering was beyond perfect. The food, the service, the attention to detail — everything was world-class. Guests are still talking about the live stations and the desserts!",
+    author: "Bride, Private Wedding",
   },
 ];
 

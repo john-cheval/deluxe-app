@@ -91,10 +91,11 @@ const Deluxe = () => {
           >
             <p className="-ml-5">Expertise in large-scale catering</p>
             <ul className="list-disc">
-              <li>Premium ingredients & impeccable service</li>
-              <li>Trusted by major organizations & event agencies</li>
-              <li>Premium ingredients & impeccable service</li>
-              <li>Trusted by major organizations & event agencies</li>
+              <li>High-volume catering, flawlessly executed</li>
+              <li>Custom menus for every event type</li>
+              <li>Trusted by top corporates and event planners</li>
+              <li>On-time, professional service you can count on</li>
+              <li>Full-service support from planning to cleanup</li>
             </ul>
           </motion.div>
 

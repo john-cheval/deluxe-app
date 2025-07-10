@@ -14,7 +14,7 @@ const Section4 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="main_heading"
           >
-            We are Expertise
+            Trusted by brands. Chosen for impact.
           </motion.h3>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -23,12 +23,12 @@ const Section4 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="description-2 text-center lg:text-left"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries,Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industrys
+            Over the years, we’ve partnered with leading brands, government
+            entities, hospitals, and event planners across the region — trusted
+            for our ability to combine scale with sophistication. While our
+            menus may change from event to event, our commitment to quality,
+            reliability, and guest satisfaction remains at the core of
+            everything we do.
           </motion.p>
         </div>
         <motion.div
